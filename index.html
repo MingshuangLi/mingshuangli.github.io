@@ -41,7 +41,7 @@
     "sameAs": [
       "https://academics.csun.edu/faculty/mingshuang.li",
       "https://scholar.google.com/citations?user=U3a9masAAAAJ&hl=en",
-      "https://orcid.org/0000-0002-4651-212X",
+      "https://orcid.org/0000-0001-6095-1228",
       "https://www.linkedin.com/in/limingshuang",
       "https://www.researchgate.net/profile/Mingshuang-Li-3"
     ]
@@ -157,15 +157,18 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      flex: 0 0 34px;
-      width: 34px;
-      height: 34px;
-      border-radius: 9px;
-      background: rgba(133, 38, 58, 0.1);
-      color: #85263a;
-      font-size: 0.8rem;
-      font-weight: 800;
-      letter-spacing: 0.01em;
+      flex: 0 0 40px;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: inset 0 0 0 1px rgba(31, 41, 55, 0.08);
+    }
+    .profile-link-mark svg {
+      width: 40px;
+      height: 40px;
+      display: block;
     }
     .profile-link-text strong,
     .profile-link-text span {
@@ -253,19 +256,48 @@
         </div>
         <div class="profile-links" aria-label="Academic and professional profiles">
           <a class="profile-link" href="https://scholar.google.com/citations?user=U3a9masAAAAJ&amp;hl=en" target="_blank" rel="noopener">
-            <span class="profile-link-mark" aria-hidden="true">GS</span>
+            <span class="profile-link-mark" aria-hidden="true">
+              <svg viewBox="0 0 40 40" role="img">
+                <rect width="40" height="40" rx="10" fill="#4285F4"/>
+                <path d="M6 15.5 20 8l14 7.5L20 23 6 15.5Z" fill="#fff"/>
+                <path d="M11 19.5v7.2c3.1 2.7 6.1 4 9 4s5.9-1.3 9-4v-7.2L20 24l-9-4.5Z" fill="#dfe9ff"/>
+                <path d="M33 17v9" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
             <span class="profile-link-text"><strong>Google Scholar</strong><span>Publications &amp; citations</span></span>
           </a>
-          <a class="profile-link" href="https://orcid.org/0000-0002-4651-212X" target="_blank" rel="noopener">
-            <span class="profile-link-mark" aria-hidden="true">iD</span>
-            <span class="profile-link-text"><strong>ORCID</strong><span>0000-0002-4651-212X</span></span>
+          <a class="profile-link" href="https://orcid.org/0000-0001-6095-1228" target="_blank" rel="noopener">
+            <span class="profile-link-mark" aria-hidden="true">
+              <svg viewBox="0 0 40 40" role="img">
+                <rect width="40" height="40" rx="10" fill="#A6CE39"/>
+                <circle cx="20" cy="20" r="13.5" fill="#fff"/>
+                <circle cx="14.2" cy="14.2" r="1.7" fill="#A6CE39"/>
+                <rect x="12.8" y="17.2" width="2.8" height="9.5" rx="1.2" fill="#A6CE39"/>
+                <path d="M19 17.2h4.2c4 0 6.4 1.9 6.4 4.7 0 3.1-2.5 4.8-6.7 4.8H19v-9.5Zm3 2.4v4.7h1.1c2.3 0 3.6-.8 3.6-2.4 0-1.5-1.2-2.3-3.6-2.3H22Z" fill="#A6CE39"/>
+              </svg>
+            </span>
+            <span class="profile-link-text"><strong>ORCID</strong><span>0000-0001-6095-1228</span></span>
           </a>
           <a class="profile-link" href="https://www.linkedin.com/in/limingshuang" target="_blank" rel="noopener">
-            <span class="profile-link-mark" aria-hidden="true">in</span>
+            <span class="profile-link-mark" aria-hidden="true">
+              <svg viewBox="0 0 40 40" role="img">
+                <rect width="40" height="40" rx="10" fill="#0A66C2"/>
+                <circle cx="13.5" cy="13.2" r="2.3" fill="#fff"/>
+                <rect x="11.5" y="17" width="4" height="12" rx="1" fill="#fff"/>
+                <path d="M19 17h3.8v1.7c1.1-1.4 2.6-2.2 4.7-2.2 4 0 5.5 2.5 5.5 6.5v6h-4v-5.5c0-2.2-.6-3.6-2.7-3.6-2.2 0-3.3 1.5-3.3 4.1v5h-4V17Z" fill="#fff"/>
+              </svg>
+            </span>
             <span class="profile-link-text"><strong>LinkedIn</strong><span>Professional network</span></span>
           </a>
           <a class="profile-link" href="https://www.researchgate.net/profile/Mingshuang-Li-3" target="_blank" rel="noopener">
-            <span class="profile-link-mark" aria-hidden="true">RG</span>
+            <span class="profile-link-mark" aria-hidden="true">
+              <svg viewBox="0 0 40 40" role="img">
+                <rect width="40" height="40" rx="10" fill="#00CCBB"/>
+                <text x="7.2" y="27" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#fff">R</text>
+                <text x="20" y="25.8" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#fff">G</text>
+                <circle cx="31.2" cy="10" r="2.2" fill="#fff"/>
+              </svg>
+            </span>
             <span class="profile-link-text"><strong>ResearchGate</strong><span>Research profile</span></span>
           </a>
         </div>
@@ -523,7 +555,7 @@
       <a href="tel:+18186772634">+1 (818) 677-2634</a>
       <div class="footer-profile-links" aria-label="Professional profiles">
         <a href="https://scholar.google.com/citations?user=U3a9masAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
-        <a href="https://orcid.org/0000-0002-4651-212X" target="_blank" rel="noopener">ORCID</a>
+        <a href="https://orcid.org/0000-0001-6095-1228" target="_blank" rel="noopener">ORCID</a>
         <a href="https://www.linkedin.com/in/limingshuang" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://www.researchgate.net/profile/Mingshuang-Li-3" target="_blank" rel="noopener">ResearchGate</a>
       </div>
