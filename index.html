@@ -7,6 +7,35 @@
   <meta name="author" content="Mingshuang Li">
   <title>Mingshuang Li, Ph.D., CCC-A</title>
   <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .credentials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      align-items: stretch;
+    }
+    .credentials-grid .card {
+      min-height: 210px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .credentials-grid .card h3 {
+      margin-bottom: 14px;
+    }
+    .credentials-grid .clean-list {
+      margin-top: 12px;
+    }
+    @media (max-width: 760px) {
+      .credentials-grid {
+        grid-template-columns: 1fr;
+      }
+      .credentials-grid .card {
+        min-height: auto;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -80,7 +109,7 @@
         <p class="eyebrow">Credentials</p>
         <h2>Certificates &amp; Licensure</h2>
       </div>
-      <div class="card-grid three">
+      <div class="credentials-grid">
         <article class="card">
           <h3>Certificate of Clinical Competence in Audiology</h3>
           <p>American Speech-Language-Hearing Association</p>
