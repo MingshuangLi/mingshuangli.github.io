@@ -39,7 +39,11 @@
       "Clinical audiology"
     ],
     "sameAs": [
-      "https://academics.csun.edu/faculty/mingshuang.li"
+      "https://academics.csun.edu/faculty/mingshuang.li",
+      "https://scholar.google.com/citations?user=U3a9masAAAAJ&hl=en",
+      "https://orcid.org/0000-0002-4651-212X",
+      "https://www.linkedin.com/in/limingshuang",
+      "https://www.researchgate.net/profile/Mingshuang-Li-3"
     ]
   }
   </script>
@@ -122,6 +126,70 @@
     .credentials-grid .clean-list {
       margin-top: 12px;
     }
+
+    .profile-links {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 860px;
+      margin: 1.15rem 0 0.35rem;
+    }
+    .profile-link {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      min-height: 62px;
+      padding: 11px 14px;
+      border: 1px solid rgba(95, 104, 117, 0.22);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.82);
+      color: inherit;
+      text-decoration: none;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+    .profile-link:hover,
+    .profile-link:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(133, 38, 58, 0.42);
+      box-shadow: 0 10px 24px rgba(31, 41, 55, 0.08);
+    }
+    .profile-link-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 34px;
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      background: rgba(133, 38, 58, 0.1);
+      color: #85263a;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+    }
+    .profile-link-text strong,
+    .profile-link-text span {
+      display: block;
+    }
+    .profile-link-text strong {
+      font-size: 0.94rem;
+      line-height: 1.25;
+    }
+    .profile-link-text span {
+      margin-top: 2px;
+      color: var(--muted, #5f6875);
+      font-size: 0.77rem;
+      line-height: 1.25;
+    }
+    .footer-profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      margin-top: 8px;
+    }
+    .footer-profile-links a {
+      font-size: 0.9rem;
+    }
     @media (max-width: 760px) {
       .credentials-grid {
         grid-template-columns: 1fr;
@@ -129,12 +197,14 @@
       .credentials-grid .card {
         min-height: auto;
       }
-      .hero-highlights {
+      .hero-highlights,
+      .profile-links {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
     @media (max-width: 520px) {
-      .hero-highlights {
+      .hero-highlights,
+      .profile-links {
         grid-template-columns: 1fr;
       }
     }
@@ -181,7 +251,25 @@
           <a class="button primary" href="files/Mingshuang_Li_CV.pdf">Download CV</a>
           <a class="button secondary" href="mailto:mingshuang.li@csun.edu">Email me</a>
         </div>
-        <div class="quick-links" aria-label="Professional links">
+        <div class="profile-links" aria-label="Academic and professional profiles">
+          <a class="profile-link" href="https://scholar.google.com/citations?user=U3a9masAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+            <span class="profile-link-mark" aria-hidden="true">GS</span>
+            <span class="profile-link-text"><strong>Google Scholar</strong><span>Publications &amp; citations</span></span>
+          </a>
+          <a class="profile-link" href="https://orcid.org/0000-0002-4651-212X" target="_blank" rel="noopener">
+            <span class="profile-link-mark" aria-hidden="true">iD</span>
+            <span class="profile-link-text"><strong>ORCID</strong><span>0000-0002-4651-212X</span></span>
+          </a>
+          <a class="profile-link" href="https://www.linkedin.com/in/limingshuang" target="_blank" rel="noopener">
+            <span class="profile-link-mark" aria-hidden="true">in</span>
+            <span class="profile-link-text"><strong>LinkedIn</strong><span>Professional network</span></span>
+          </a>
+          <a class="profile-link" href="https://www.researchgate.net/profile/Mingshuang-Li-3" target="_blank" rel="noopener">
+            <span class="profile-link-mark" aria-hidden="true">RG</span>
+            <span class="profile-link-text"><strong>ResearchGate</strong><span>Research profile</span></span>
+          </a>
+        </div>
+        <div class="quick-links" aria-label="Additional links">
           <a href="https://academics.csun.edu/faculty/mingshuang.li" target="_blank" rel="noopener">CSUN profile</a>
           <a href="#publications">Publications</a>
           <a href="#collaborate">Collaborate</a>
@@ -433,6 +521,12 @@
     <div class="footer-contact">
       <a href="mailto:mingshuang.li@csun.edu">mingshuang.li@csun.edu</a>
       <a href="tel:+18186772634">+1 (818) 677-2634</a>
+      <div class="footer-profile-links" aria-label="Professional profiles">
+        <a href="https://scholar.google.com/citations?user=U3a9masAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://orcid.org/0000-0002-4651-212X" target="_blank" rel="noopener">ORCID</a>
+        <a href="https://www.linkedin.com/in/limingshuang" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.researchgate.net/profile/Mingshuang-Li-3" target="_blank" rel="noopener">ResearchGate</a>
+      </div>
     </div>
     <p class="copyright">© <span id="year"></span> Mingshuang Li</p>
   </footer>
