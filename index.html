@@ -51,11 +51,57 @@
       letter-spacing: 0.08em;
       color: var(--muted, #5f6875);
     }
+    .hero .eyebrow {
+      font-size: clamp(0.9rem, 1.25vw, 1.08rem);
+      letter-spacing: 0.14em;
+      line-height: 1.45;
+    }
     .degree-line {
-      margin: 0 0 0.85rem;
-      font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+      margin: 0 0 1rem;
+      font-size: clamp(1.85rem, 2.8vw, 2.35rem);
       font-weight: 600;
       color: var(--muted, #5f6875);
+    }
+    .hero .role {
+      font-size: clamp(1.05rem, 1.5vw, 1.22rem);
+      line-height: 1.6;
+    }
+    .hero .lead {
+      max-width: 760px;
+      font-size: clamp(1.05rem, 1.35vw, 1.18rem);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+    .hero .lead-secondary {
+      max-width: 760px;
+      color: var(--muted, #5f6875);
+      font-size: clamp(1rem, 1.2vw, 1.1rem);
+      line-height: 1.7;
+      margin: 0 0 1.35rem;
+    }
+    .hero-highlights {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 860px;
+      margin: 1.1rem 0 1.5rem;
+    }
+    .hero-highlight {
+      border: 1px solid rgba(95, 104, 117, 0.22);
+      border-radius: 12px;
+      padding: 14px 15px;
+      background: rgba(255, 255, 255, 0.72);
+    }
+    .hero-highlight strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.98rem;
+    }
+    .hero-highlight span {
+      display: block;
+      color: var(--muted, #5f6875);
+      font-size: 0.88rem;
+      line-height: 1.45;
     }
     .credentials-grid {
       display: grid;
@@ -82,6 +128,14 @@
       }
       .credentials-grid .card {
         min-height: auto;
+      }
+      .hero-highlights {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 520px) {
+      .hero-highlights {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -115,14 +169,21 @@
     mingshuang.li@csun.edu
   </a>
 </p>
-        <p class="lead">My research examines how speech enhancement can improve communication under degraded listening conditions. I integrate behavioral measures, signal processing, clinical audiology, and auditory electrophysiology, with a growing focus on FFR and cABR.</p>
+        <p class="lead">Dr. Li is a clinician-scientist whose research focuses on speech perception and speech enhancement under degraded listening conditions. His work integrates psychoacoustic methods, signal processing, auditory electrophysiology, and clinical audiology.</p>
+        <p class="lead-secondary">At CSUN, he serves as Supervising Faculty of the Hearing Science Laboratory, teaches across the Au.D. curriculum, advises capstone research, and provides clinical supervision in diagnostic, electrophysiological, and vestibular audiology. He also contributes to program leadership, student professional development, editorial service, and peer review.</p>
+        <div class="hero-highlights" aria-label="Professional profile highlights">
+          <div class="hero-highlight"><strong>Research</strong><span>Speech enhancement, speech-in-noise perception, FFR and cABR</span></div>
+          <div class="hero-highlight"><strong>Au.D. Education</strong><span>Core teaching, research advising, and student mentorship</span></div>
+          <div class="hero-highlight"><strong>Clinical Audiology</strong><span>Hearing, electrophysiology, vestibular assessment, and supervision</span></div>
+          <div class="hero-highlight"><strong>Service &amp; Leadership</strong><span>Laboratory, program, student organization, and editorial service</span></div>
+        </div>
         <div class="actions">
           <a class="button primary" href="files/Mingshuang_Li_CV.pdf">Download CV</a>
           <a class="button secondary" href="mailto:mingshuang.li@csun.edu">Email me</a>
         </div>
         <div class="quick-links" aria-label="Professional links">
           <a href="https://academics.csun.edu/faculty/mingshuang.li" target="_blank" rel="noopener">CSUN profile</a>
-          <a href="#publications">Selected publications</a>
+          <a href="#publications">Publications</a>
           <a href="#collaborate">Collaborate</a>
         </div>
       </div>
