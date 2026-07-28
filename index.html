@@ -219,23 +219,58 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
       .profile-links {
-        display: flex;
-        overflow-x: auto;
-        gap: 8px;
-        padding-bottom: 6px;
-        scrollbar-width: thin;
-        -webkit-overflow-scrolling: touch;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        width: 100%;
+        overflow: visible;
+        padding-bottom: 0;
       }
       .profile-link {
-        flex: 0 0 158px;
+        min-width: 0;
+        min-height: 58px;
+        padding: 9px 10px;
+      }
+      .profile-link-mark {
+        flex-basis: 32px;
+        width: 32px;
+        height: 32px;
+      }
+      .profile-link-mark svg {
+        width: 32px;
+        height: 32px;
+      }
+      .profile-link-text {
+        min-width: 0;
+      }
+      .profile-link-text strong {
+        font-size: 0.78rem;
+        line-height: 1.2;
+      }
+      .profile-link-text span {
+        display: none;
+      }
+      .profile-link:last-child {
+        grid-column: 1 / -1;
+        width: calc(50% - 5px);
+        justify-self: center;
       }
     }
     @media (max-width: 520px) {
       .hero-highlights {
         grid-template-columns: 1fr;
       }
-      .profile-link {
-        flex-basis: 150px;
+    }
+    @media (max-width: 350px) {
+      .profile-links {
+        grid-template-columns: 1fr;
+      }
+      .profile-link:last-child {
+        grid-column: auto;
+        width: 100%;
+      }
+      .profile-link-text span {
+        display: block;
       }
     }
   </style>
