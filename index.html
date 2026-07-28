@@ -143,18 +143,18 @@
 
     .profile-links {
       display: grid;
-      grid-template-columns: repeat(5, minmax(132px, 1fr));
-      gap: 8px;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 9px;
       width: 100%;
-      max-width: 1040px;
+      max-width: 1100px;
       margin: 1.05rem 0 0.35rem;
     }
     .profile-link {
       display: flex;
       align-items: center;
-      gap: 8px;
-      min-height: 52px;
-      padding: 8px 10px;
+      gap: 7px;
+      min-height: 54px;
+      padding: 8px 8px;
       border: 1px solid rgba(95, 104, 117, 0.22);
       border-radius: 10px;
       background: rgba(255, 255, 255, 0.82);
@@ -185,19 +185,28 @@
       height: 34px;
       display: block;
     }
+    .profile-link-text {
+      min-width: 0;
+      flex: 1 1 auto;
+    }
     .profile-link-text strong,
     .profile-link-text span {
       display: block;
+      overflow-wrap: anywhere;
     }
     .profile-link-text strong {
-      font-size: 0.82rem;
-      line-height: 1.18;
+      font-size: 0.76rem;
+      line-height: 1.16;
+      letter-spacing: -0.01em;
     }
     .profile-link-text span {
       margin-top: 1px;
       color: var(--muted, #5f6875);
-      font-size: 0.66rem;
-      line-height: 1.18;
+      font-size: 0.62rem;
+      line-height: 1.16;
+    }
+    .researchgate-link .profile-link-text strong {
+      font-size: 0.72rem;
     }
     .footer-profile-links {
       display: flex;
@@ -244,8 +253,8 @@
         min-width: 0;
       }
       .profile-link-text strong {
-        font-size: 0.78rem;
-        line-height: 1.2;
+        font-size: 0.76rem;
+        line-height: 1.18;
       }
       .profile-link-text span {
         display: none;
@@ -364,7 +373,7 @@
             </span>
             <span class="profile-link-text"><strong>LinkedIn</strong><span>Professional network</span></span>
           </a>
-          <a class="profile-link" href="https://www.researchgate.net/profile/Mingshuang-Li-3" target="_blank" rel="noopener">
+          <a class="profile-link researchgate-link" href="https://www.researchgate.net/profile/Mingshuang-Li-3" target="_blank" rel="noopener">
             <span class="profile-link-mark" aria-hidden="true">
               <svg viewBox="0 0 40 40" role="img">
                 <rect width="40" height="40" rx="10" fill="#00CCBB"/>
@@ -373,7 +382,7 @@
                 <circle cx="31.2" cy="10" r="2.2" fill="#fff"/>
               </svg>
             </span>
-            <span class="profile-link-text"><strong>ResearchGate</strong><span>Research profile</span></span>
+            <span class="profile-link-text"><strong>Research<wbr>Gate</strong><span>Research profile</span></span>
           </a>
         </div>
         <div class="quick-links" aria-label="Additional links">
