@@ -327,40 +327,49 @@
     .language-switch {
       display: inline-flex;
       align-items: center;
-      gap: 0.2rem;
+      gap: 0.25rem;
       margin-left: auto;
       margin-right: 0.75rem;
-      padding: 0.28rem;
-      border: 1px solid rgba(31, 41, 55, 0.16);
+      padding: 0.3rem;
+      border: 2px solid rgba(157, 23, 77, 0.5);
       border-radius: 999px;
-      background: #fff;
-      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+      background: #fff7fa;
+      box-shadow: 0 7px 20px rgba(157, 23, 77, 0.14);
       white-space: nowrap;
+    }
+    .language-switch::before {
+      content: "🌐";
+      padding-left: 0.35rem;
+      font-size: 0.92rem;
+      line-height: 1;
     }
     .language-switch a,
     .language-switch span {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 34px;
-      padding: 0.35rem 0.72rem;
+      min-height: 38px;
+      padding: 0.45rem 0.88rem;
       border-radius: 999px;
-      font-size: 0.88rem;
-      font-weight: 700;
+      font-size: 0.94rem;
+      font-weight: 800;
       line-height: 1;
       text-decoration: none;
     }
     .language-switch .active {
       color: #fff;
       background: var(--accent, #9d174d);
+      box-shadow: 0 3px 9px rgba(157, 23, 77, 0.24);
     }
-    .language-switch a:not(.active) { color: var(--ink, #172033); }
-    .language-switch a:not(.active):hover { background: #f3f4f6; }
+    .language-switch a:not(.active) { color: var(--accent, #9d174d); }
+    .language-switch a:not(.active):hover,
+    .language-switch a:not(.active):focus-visible { background: #fce7f0; }
     @media (max-width: 760px) {
-      .site-header { gap: 0.45rem; }
-      .language-switch { margin-left: auto; margin-right: 0.35rem; }
+      .site-header { gap: 0.4rem; }
+      .language-switch { margin-left: auto; margin-right: 0.2rem; padding: 0.22rem; }
+      .language-switch::before { display: none; }
       .language-switch a,
-      .language-switch span { min-height: 32px; padding: 0.32rem 0.58rem; font-size: 0.82rem; }
+      .language-switch span { min-height: 34px; padding: 0.36rem 0.62rem; font-size: 0.84rem; }
     }
 </style>
 <link href="https://mingshuangli.github.io/" hreflang="en" rel="alternate"/><link href="https://mingshuangli.github.io/zh-cn.html" hreflang="zh-Hans" rel="alternate"/><link href="https://mingshuangli.github.io/" hreflang="x-default" rel="alternate"/></head>

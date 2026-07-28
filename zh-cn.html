@@ -329,40 +329,49 @@
     .language-switch {
       display: inline-flex;
       align-items: center;
-      gap: 0.2rem;
+      gap: 0.25rem;
       margin-left: auto;
       margin-right: 0.75rem;
-      padding: 0.28rem;
-      border: 1px solid rgba(31, 41, 55, 0.16);
+      padding: 0.3rem;
+      border: 2px solid rgba(157, 23, 77, 0.5);
       border-radius: 999px;
-      background: #fff;
-      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+      background: #fff7fa;
+      box-shadow: 0 7px 20px rgba(157, 23, 77, 0.14);
       white-space: nowrap;
+    }
+    .language-switch::before {
+      content: "🌐";
+      padding-left: 0.35rem;
+      font-size: 0.92rem;
+      line-height: 1;
     }
     .language-switch a,
     .language-switch span {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 34px;
-      padding: 0.35rem 0.72rem;
+      min-height: 38px;
+      padding: 0.45rem 0.88rem;
       border-radius: 999px;
-      font-size: 0.88rem;
-      font-weight: 700;
+      font-size: 0.94rem;
+      font-weight: 800;
       line-height: 1;
       text-decoration: none;
     }
     .language-switch .active {
       color: #fff;
       background: var(--accent, #9d174d);
+      box-shadow: 0 3px 9px rgba(157, 23, 77, 0.24);
     }
-    .language-switch a:not(.active) { color: var(--ink, #172033); }
-    .language-switch a:not(.active):hover { background: #f3f4f6; }
+    .language-switch a:not(.active) { color: var(--accent, #9d174d); }
+    .language-switch a:not(.active):hover,
+    .language-switch a:not(.active):focus-visible { background: #fce7f0; }
     @media (max-width: 760px) {
-      .site-header { gap: 0.45rem; }
-      .language-switch { margin-left: auto; margin-right: 0.35rem; }
+      .site-header { gap: 0.4rem; }
+      .language-switch { margin-left: auto; margin-right: 0.2rem; padding: 0.22rem; }
+      .language-switch::before { display: none; }
       .language-switch a,
-      .language-switch span { min-height: 32px; padding: 0.32rem 0.58rem; font-size: 0.82rem; }
+      .language-switch span { min-height: 34px; padding: 0.36rem 0.62rem; font-size: 0.84rem; }
     }
 </style>
 <link href="https://mingshuangli.github.io/" hreflang="en" rel="alternate"/><link href="https://mingshuangli.github.io/zh-cn.html" hreflang="zh-Hans" rel="alternate"/><link href="https://mingshuangli.github.io/" hreflang="x-default" rel="alternate"/></head>
@@ -516,19 +525,19 @@
 </div>
 <div class="card-grid three">
 <article class="card featured">
-<p class="card-label">开发并评估基于共振峰的言语增强策略，改善噪声、低信噪比及声源端衰减条件下的言语感知。</p>
+<p class="card-label">主要研究方向</p>
 <h3>言语增强</h3>
-<p>Developing and evaluating formant-based enhancement strategies for speech affected by noise, reduced signal-to-noise ratio, and source-related muffling.</p>
+<p>开发并评估基于共振峰的言语增强策略，改善噪声、低信噪比及声源端衰减条件下的言语感知。</p>
 </article>
 <article class="card">
-<p class="card-label">研究复杂声音的神经编码，包括言语内容以及频谱与时间调制的影响。</p>
+<p class="card-label">发展中的研究方向</p>
 <h3>FFR 与 cABR</h3>
-<p>Investigating neural encoding of complex sounds, including effects of speech content and spectral and temporal modulation.</p>
+<p>研究复杂声音的神经编码，包括言语内容以及频谱与时间调制对听觉神经反应的影响。</p>
 </article>
 <article class="card">
-<p class="card-label">研究语言经验、语音类别映射、心理声学敏感性、掩蔽释放、音高加工以及噪声中的言语感知。</p>
+<p class="card-label">研究基础</p>
 <h3>言语感知</h3>
-<p>Studying language experience, category mapping, psychoacoustic sensitivity, masking release, pitch processing, and speech perception in noise.</p>
+<p>研究语言经验、语音类别映射、心理声学敏感性、掩蔽释放、音高加工以及噪声中的言语感知。</p>
 </article>
 </div>
 <div class="research-question">
