@@ -761,6 +761,24 @@ main li,
   .section-heading h2 { font-size: 1.49rem; }
 }
 </style>
+
+<style>
+/* Near-final section-title scale: only slightly smaller than the earlier large treatment. */
+.section-heading h2 {
+  font-size: clamp(1.94rem, 2.9vw, 2.52rem);
+}
+.compact-section-title {
+  font-size: clamp(1.94rem, 2.82vw, 2.48rem) !important;
+}
+@media (max-width: 760px) {
+  .section-heading h2 { font-size: clamp(1.55rem, 6.35vw, 1.86rem); }
+  .compact-section-title { font-size: clamp(1.53rem, 6.15vw, 1.78rem) !important; }
+}
+@media (max-width: 390px) {
+  .section-heading h2 { font-size: 1.50rem; }
+  .compact-section-title { font-size: 1.48rem !important; }
+}
+</style>
 </head>
 <body>
 <header class="site-header">
