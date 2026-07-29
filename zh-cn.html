@@ -796,6 +796,22 @@ main li,
   .section-heading h2 { font-size: 1.55rem; }
   .compact-section-title { font-size: 1.53rem !important; }
 }
+
+/* Final title refinement: a small, visible increase without returning to the early oversized scale. */
+.section-heading h2 {
+  font-size: clamp(2.08rem, 3.12vw, 2.68rem);
+}
+.compact-section-title {
+  font-size: clamp(2.06rem, 3.03vw, 2.64rem) !important;
+}
+@media (max-width: 760px) {
+  .section-heading h2 { font-size: clamp(1.64rem, 6.72vw, 1.98rem); }
+  .compact-section-title { font-size: clamp(1.62rem, 6.50vw, 1.90rem) !important; }
+}
+@media (max-width: 390px) {
+  .section-heading h2 { font-size: 1.59rem; }
+  .compact-section-title { font-size: 1.57rem !important; }
+}
 </style>
 </head>
 <body>
@@ -831,10 +847,10 @@ main li,
 <p class="lead-secondary">在 CSUN，他负责听觉科学实验室的研究与学生培养，承担 Au.D. 项目的核心课程教学，指导 Au.D. 毕业研究，并在诊断听力学、听觉电生理和前庭听力学方面提供临床督导。他曾任 Au.D. 项目代理主任，并持续参与学生专业发展。</p>
 <div class="work-achievements-heading"><h2>工作与成绩</h2><p class="work-achievements-hint">选择一个领域查看详情</p></div>
 <div aria-label="工作与成绩快捷链接" class="hero-highlights">
-<a class="hero-highlight" href="#research"><strong>研究</strong><span>言语增强、心理声学与听觉电生理</span></a>
-<a class="hero-highlight" href="#teaching"><strong>临床博士教育</strong><span>教学、研究指导与学生培养</span></a>
-<a class="hero-highlight" href="#clinical"><strong>临床实践与督导</strong><span>资质、临床实践与督导</span></a>
-<a class="hero-highlight" href="#service"><strong>服务与领导</strong><span>实验室、项目、学生与专业服务</span></a>
+<a class="hero-highlight" href="#research"><strong>研究</strong><span>言语增强 · 言语感知与心理声学 · 听觉电生理</span></a>
+<a class="hero-highlight" href="#teaching"><strong>临床博士教育</strong><span>课程教学 · 研究指导 · 学生培养</span></a>
+<a class="hero-highlight" href="#clinical"><strong>临床实践与督导</strong><span>临床资质 · 专业实践 · Au.D. 学生督导</span></a>
+<a class="hero-highlight" href="#service"><strong>服务与领导</strong><span>实验室 · 项目 · 学生组织 · 编辑服务</span></a>
 </div>
 <div class="actions">
 <a class="button primary" href="files/Mingshuang_Li_CV.pdf">下载英文简历</a>
@@ -1084,7 +1100,7 @@ main li,
 <section class="section" id="clinical">
 <div class="section-heading">
 <p class="eyebrow">临床实践与督导</p>
-<h2>临床资质、专业实践与学生督导</h2>
+<h2>临床资质、实践与督导</h2>
 </div>
 <div class="clinical-subsection">
 <h3 class="clinical-subsection-title">临床资质与执照</h3>
