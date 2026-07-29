@@ -425,6 +425,19 @@
       outline: none;
     }
 
+
+/* Integrated clinical credentials and practice */
+.clinical-subsection { margin: 1.75rem 0 2rem; }
+.clinical-subsection-title {
+  margin: 1.4rem 0 1rem;
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+#clinical .credentials-grid { margin-bottom: 2rem; }
+@media (max-width: 700px) {
+  .clinical-subsection { margin: 1.35rem 0 1.6rem; }
+  .clinical-subsection-title { font-size: 1.08rem; }
+}
 </style>
 <link href="https://mingshuangli.github.io/" hreflang="en" rel="alternate"/><link href="https://mingshuangli.github.io/zh-cn.html" hreflang="zh-Hans" rel="alternate"/><link href="https://mingshuangli.github.io/" hreflang="x-default" rel="alternate"/>
 <style>
@@ -445,7 +458,6 @@
   }
 }
 </style>
-
 <style>
 /* Final mobile override: horizontal work-and-achievement cards */
 @media (max-width: 700px) {
@@ -482,14 +494,63 @@
   }
 }
 </style>
+<style>
+/* Definitive mobile layout for Work & Achievements cards */
+@media (max-width: 760px) {
+  .hero-highlights {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+    grid-template-columns: none !important;
+  }
 
+  .hero-highlights > a.hero-highlight {
+    display: grid !important;
+    grid-template-columns: minmax(7rem, 39%) minmax(0, 61%) !important;
+    align-items: center !important;
+    column-gap: 12px !important;
+    width: 100% !important;
+    min-height: 70px !important;
+    padding: 12px 14px !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero-highlights > a.hero-highlight > strong {
+    display: block !important;
+    margin: 0 !important;
+    font-size: 0.96rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .hero-highlights > a.hero-highlight > span {
+    display: block !important;
+    margin: 0 !important;
+    min-width: 0 !important;
+    font-size: 0.84rem !important;
+    line-height: 1.38 !important;
+    overflow-wrap: anywhere !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-highlights > a.hero-highlight {
+    grid-template-columns: minmax(6.5rem, 42%) minmax(0, 58%) !important;
+    column-gap: 9px !important;
+    padding: 11px 12px !important;
+  }
+  .hero-highlights > a.hero-highlight > strong { font-size: 0.91rem !important; }
+  .hero-highlights > a.hero-highlight > span { font-size: 0.80rem !important; }
+}
+</style>
 </head>
 <body>
 <header class="site-header">
 <a class="brand" href="#top">Mingshuang Li</a>
 <div aria-label="Language selection" class="language-switch"><span aria-current="page" class="active">English</span><a href="zh-cn.html" lang="zh-Hans">简体中文</a></div><button aria-expanded="false" aria-label="Open navigation" class="nav-toggle" type="button">Menu</button>
 <nav aria-label="Primary navigation" class="nav">
-<a href="#credentials">Credentials</a>
+
 <a href="#research">Research</a>
 <a href="#publications">Publications</a>
 <a href="#presentations">Presentations</a>
@@ -520,7 +581,7 @@
 <div aria-label="Work and achievements" class="hero-highlights">
 <a class="hero-highlight" href="#research"><strong>Research</strong><span>Speech enhancement, speech-in-noise perception, FFR and cABR</span></a>
 <a class="hero-highlight" href="#teaching"><strong>Au.D. Education</strong><span>Core teaching, research advising, and student mentorship</span></a>
-<a class="hero-highlight" href="#clinical"><strong>Clinical Practice &amp; Supervision</strong><span>Hearing, electrophysiology, vestibular assessment, and supervision</span></a>
+<a class="hero-highlight" href="#clinical"><strong>Clinical Practice &amp; Supervision</strong><span>Clinical credentials, professional practice, and Au.D. student supervision</span></a>
 <a class="hero-highlight" href="#service"><strong>Service &amp; Leadership</strong><span>Laboratory, program, student organization, and editorial service</span></a>
 </div>
 <div class="actions">
@@ -608,27 +669,7 @@
 </dl>
 </aside>
 </section>
-<section class="section" id="credentials">
-<div class="section-heading">
-<p class="eyebrow">Credentials</p>
-<h2>Certificates &amp; Licensure</h2>
-</div>
-<div class="credentials-grid">
-<article class="card">
-<h3>Certificate of Clinical Competence in Audiology</h3>
-<p>American Speech-Language-Hearing Association</p>
-<p><strong>CCC-A · Issued 2022</strong></p>
-</article>
-<article class="card">
-<h3>California Dispensing Audiologist License</h3>
-<p>California Speech-Language Pathology &amp; Audiology &amp; Hearing Aid Dispensers Board</p>
-<ul class="clean-list">
-<li>Audiologist License · Issued 2022</li>
-<li>Hearing Aid Dispenser License · Issued 2025</li>
-</ul>
-</article>
-</div>
-</section>
+
 <section class="section muted" id="research">
 <div class="section-heading">
 <p class="eyebrow">Research</p>
@@ -724,7 +765,6 @@
 </li>
 </ol>
 </section>
-
 <section class="section muted" id="presentations">
 <div class="section-heading split-heading">
 <div>
@@ -776,9 +816,23 @@
 </section>
 <section class="section" id="clinical">
 <div class="section-heading">
-<p class="eyebrow">Clinical audiology</p>
-<h2>Clinical expertise across hearing and balance</h2>
-</div>
+<p class="eyebrow">Clinical Practice &amp; Supervision</p>
+<h2>Credentials, professional practice, and student supervision</h2>
+</div><div class="clinical-subsection"><h3 class="clinical-subsection-title">Clinical Credentials &amp; Licensure</h3><div class="credentials-grid">
+<article class="card">
+<h3>Certificate of Clinical Competence in Audiology</h3>
+<p>American Speech-Language-Hearing Association</p>
+<p><strong>CCC-A · Issued 2022</strong></p>
+</article>
+<article class="card">
+<h3>California Dispensing Audiologist License</h3>
+<p>California Speech-Language Pathology &amp; Audiology &amp; Hearing Aid Dispensers Board</p>
+<ul class="clean-list">
+<li>Audiologist License · Issued 2022</li>
+<li>Hearing Aid Dispenser License · Issued 2025</li>
+</ul>
+</article>
+</div></div><h3 class="clinical-subsection-title">Clinical expertise across hearing and balance</h3>
 <div class="tag-list">
 <span>Adult and pediatric hearing evaluation</span>
 <span>Hearing aids and real-ear verification</span>

@@ -425,6 +425,19 @@
       outline: none;
     }
 
+
+/* Integrated clinical credentials and practice */
+.clinical-subsection { margin: 1.75rem 0 2rem; }
+.clinical-subsection-title {
+  margin: 1.4rem 0 1rem;
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+#clinical .credentials-grid { margin-bottom: 2rem; }
+@media (max-width: 700px) {
+  .clinical-subsection { margin: 1.35rem 0 1.6rem; }
+  .clinical-subsection-title { font-size: 1.08rem; }
+}
 </style>
 <link href="https://mingshuangli.github.io/" hreflang="en" rel="alternate"/><link href="https://mingshuangli.github.io/zh-cn.html" hreflang="zh-Hans" rel="alternate"/><link href="https://mingshuangli.github.io/" hreflang="x-default" rel="alternate"/>
 <style>
@@ -463,14 +476,63 @@
   }
 }
 </style>
+<style>
+/* Definitive mobile layout for Work & Achievements cards */
+@media (max-width: 760px) {
+  .hero-highlights {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+    grid-template-columns: none !important;
+  }
 
+  .hero-highlights > a.hero-highlight {
+    display: grid !important;
+    grid-template-columns: minmax(7rem, 39%) minmax(0, 61%) !important;
+    align-items: center !important;
+    column-gap: 12px !important;
+    width: 100% !important;
+    min-height: 70px !important;
+    padding: 12px 14px !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero-highlights > a.hero-highlight > strong {
+    display: block !important;
+    margin: 0 !important;
+    font-size: 0.96rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .hero-highlights > a.hero-highlight > span {
+    display: block !important;
+    margin: 0 !important;
+    min-width: 0 !important;
+    font-size: 0.84rem !important;
+    line-height: 1.38 !important;
+    overflow-wrap: anywhere !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-highlights > a.hero-highlight {
+    grid-template-columns: minmax(6.5rem, 42%) minmax(0, 58%) !important;
+    column-gap: 9px !important;
+    padding: 11px 12px !important;
+  }
+  .hero-highlights > a.hero-highlight > strong { font-size: 0.91rem !important; }
+  .hero-highlights > a.hero-highlight > span { font-size: 0.80rem !important; }
+}
+</style>
 </head>
 <body>
 <header class="site-header">
 <a class="brand" href="#top">李明爽</a>
 <div aria-label="Language selection" class="language-switch"><a href="index.html" lang="en">English</a><span aria-current="page" class="active" lang="zh-Hans">简体中文</span></div><button aria-expanded="false" aria-label="打开导航菜单" class="nav-toggle" type="button">菜单</button>
 <nav aria-label="Primary navigation" class="nav">
-<a href="#credentials">资质证书</a>
+
 <a href="#research">研究</a>
 <a href="#publications">学术成果</a>
 <a href="#presentations">学术报告</a>
@@ -501,7 +563,7 @@
 <div aria-label="工作与成绩快捷链接" class="hero-highlights">
 <a class="hero-highlight" href="#research"><strong>研究</strong><span>言语增强、噪声中言语感知、FFR 与 cABR</span></a>
 <a class="hero-highlight" href="#teaching"><strong>临床博士教育</strong><span>核心课程教学、研究指导与学生培养</span></a>
-<a class="hero-highlight" href="#clinical"><strong>临床实践与督导</strong><span>听力、电生理、前庭评估与临床督导</span></a>
+<a class="hero-highlight" href="#clinical"><strong>临床实践与督导</strong><span>临床资质、专业实践与听力学临床博士学生督导</span></a>
 <a class="hero-highlight" href="#service"><strong>服务与领导</strong><span>实验室、项目、学生组织与编辑服务</span></a>
 </div>
 <div class="actions">
@@ -589,27 +651,7 @@
 </dl>
 </aside>
 </section>
-<section class="section" id="credentials">
-<div class="section-heading">
-<p class="eyebrow">专业资质</p>
-<h2>证书与执照</h2>
-</div>
-<div class="credentials-grid">
-<article class="card">
-<h3>听力学临床能力证书（CCC-A）</h3>
-<p>美国言语-语言-听力协会</p>
-<p><strong>CCC-A · 2022 年取得</strong></p>
-</article>
-<article class="card">
-<h3>加州执照听力师</h3>
-<p>加州言语-语言病理学、听力学及助听器验配师委员会</p>
-<ul class="clean-list">
-<li>听力学家执照 · 2022 年取得</li>
-<li>助听器验配师执照 · 2025 年取得</li>
-</ul>
-</article>
-</div>
-</section>
+
 <section class="section muted" id="research">
 <div class="section-heading">
 <p class="eyebrow">研究</p>
@@ -705,7 +747,6 @@
 </li>
 </ol>
 </section>
-
 <section class="section muted" id="presentations">
 <div class="section-heading split-heading">
 <div>
@@ -754,8 +795,22 @@
 <section class="section" id="clinical">
 <div class="section-heading">
 <p class="eyebrow">临床实践与督导</p>
-<h2>听力与平衡领域的临床专长</h2>
-</div>
+<h2>临床资质、专业实践与学生督导</h2>
+</div><div class="clinical-subsection"><h3 class="clinical-subsection-title">临床资质与执照</h3><div class="credentials-grid">
+<article class="card">
+<h3>听力学临床能力证书（CCC-A）</h3>
+<p>美国言语-语言-听力协会</p>
+<p><strong>CCC-A · 2022 年取得</strong></p>
+</article>
+<article class="card">
+<h3>加州执照听力师</h3>
+<p>加州言语-语言病理学、听力学及助听器验配师委员会</p>
+<ul class="clean-list">
+<li>听力学家执照 · 2022 年取得</li>
+<li>助听器验配师执照 · 2025 年取得</li>
+</ul>
+</article>
+</div></div><h3 class="clinical-subsection-title">听力与平衡领域的临床专长</h3>
 <div class="tag-list">
 <span>成人与儿童听力评估</span>
 <span>助听器验配及真耳分析</span>
