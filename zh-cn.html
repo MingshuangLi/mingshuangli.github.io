@@ -701,6 +701,53 @@ main li,
 }
 </style>
 
+
+<style>
+/* Final typography balance: slightly smaller long section titles, slightly larger auxiliary text, and tighter shortcut copy. */
+.section-heading h2 {
+  font-size: clamp(1.82rem, 2.75vw, 2.42rem);
+  line-height: 1.2;
+}
+.section-summary,
+.text-link,
+.quick-links a,
+.profile-link-text strong,
+.profile-link-text span,
+.footer-profile-links a,
+.work-achievements-hint {
+  font-size: 1.01em;
+}
+.profile-link-text strong { font-size: 0.8rem; }
+.profile-link-text span { font-size: 0.67rem; }
+.work-achievements-hint { font-size: 0.96rem; }
+.hero-highlight span {
+  font-size: 0.96rem;
+  line-height: 1.5;
+}
+@media (max-width: 760px) {
+  .section-heading h2 {
+    font-size: clamp(1.46rem, 6.1vw, 1.76rem);
+    line-height: 1.18;
+  }
+  .section-summary {
+    font-size: 0.99rem;
+    line-height: 1.55;
+  }
+  .hero-highlights > a.hero-highlight > span {
+    font-size: 0.88rem !important;
+    line-height: 1.38 !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+  .work-achievements-hint { font-size: 0.94rem; }
+  .profile-link-text strong { font-size: 0.79rem; }
+}
+@media (max-width: 390px) {
+  .section-heading h2 { font-size: 1.42rem; }
+  .hero-highlights > a.hero-highlight > span { font-size: 0.84rem !important; }
+}
+</style>
+
 </head>
 <body>
 <header class="site-header">
@@ -735,10 +782,10 @@ main li,
 <p class="lead-secondary">在 CSUN，他负责听觉科学实验室的研究与学生培养，承担 Au.D. 项目的核心课程教学，指导 Au.D. 毕业研究，并在诊断听力学、听觉电生理和前庭听力学方面提供临床督导。他曾任 Au.D. 项目代理主任，并持续参与学生专业发展。</p>
 <div class="work-achievements-heading"><h2>工作与成绩</h2><p class="work-achievements-hint">选择一个领域查看详情</p></div>
 <div aria-label="工作与成绩快捷链接" class="hero-highlights">
-<a class="hero-highlight" href="#research"><strong>研究</strong><span>言语增强、言语感知与心理声学，以及听觉电生理</span></a>
-<a class="hero-highlight" href="#teaching"><strong>临床博士教育</strong><span>核心课程教学、研究指导与学生培养</span></a>
-<a class="hero-highlight" href="#clinical"><strong>临床实践与督导</strong><span>临床资质、专业实践与听力学临床博士学生督导</span></a>
-<a class="hero-highlight" href="#service"><strong>服务与领导</strong><span>实验室、项目、学生组织与编辑服务</span></a>
+<a class="hero-highlight" href="#research"><strong>研究</strong><span>言语增强 · 言语感知与心理声学 · 听觉电生理</span></a>
+<a class="hero-highlight" href="#teaching"><strong>临床博士教育</strong><span>课程教学 · 研究指导 · 学生培养</span></a>
+<a class="hero-highlight" href="#clinical"><strong>临床实践与督导</strong><span>临床资质 · 专业实践 · Au.D. 学生督导</span></a>
+<a class="hero-highlight" href="#service"><strong>服务与领导</strong><span>实验室 · 项目 · 学生组织 · 编辑服务</span></a>
 </div>
 <div class="actions">
 <a class="button primary" href="files/Mingshuang_Li_CV.pdf">下载英文简历</a>
