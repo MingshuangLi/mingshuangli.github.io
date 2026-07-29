@@ -104,7 +104,7 @@
     }
     .hero-highlights {
       display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 12px;
       max-width: 1080px;
       margin: 1.1rem 0 1.5rem;
@@ -148,7 +148,7 @@
 
     .profile-links {
       display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 9px;
       width: 100%;
       max-width: 1100px;
@@ -270,8 +270,33 @@
       .credentials-grid .card {
         min-height: auto;
       }
+      .work-achievements-heading {
+        margin-top: 1.05rem;
+      }
+      .work-achievements-heading h2 {
+        font-size: 1.42rem;
+      }
       .hero-highlights {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      a.hero-highlight {
+        display: grid;
+        grid-template-columns: minmax(110px, 0.42fr) minmax(0, 0.58fr);
+        align-items: center;
+        column-gap: 14px;
+        min-height: 76px;
+        padding: 13px 15px;
+        text-align: left;
+      }
+      .hero-highlight strong {
+        margin-bottom: 0;
+        font-size: 0.98rem;
+        line-height: 1.3;
+      }
+      .hero-highlight span {
+        font-size: 0.86rem;
+        line-height: 1.4;
       }
       .profile-links {
         display: grid;
@@ -309,11 +334,6 @@
         grid-column: 1 / -1;
         width: calc(50% - 5px);
         justify-self: center;
-      }
-    }
-    @media (max-width: 520px) {
-      .hero-highlights {
-        grid-template-columns: 1fr;
       }
     }
     @media (max-width: 350px) {
@@ -377,6 +397,15 @@
       .language-switch span { min-height: 34px; padding: 0.36rem 0.62rem; font-size: 0.84rem; }
     }
 
+    .work-achievements-heading {
+      margin: 1.25rem 0 0.2rem;
+    }
+    .work-achievements-heading h2 {
+      margin: 0;
+      font-size: clamp(1.5rem, 2.2vw, 2rem);
+      line-height: 1.18;
+    }
+
     /* Clickable profile highlight cards */
     .hero-highlights {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -416,7 +445,7 @@
 <main id="top">
 <section class="hero section">
 <div class="hero-copy">
-<p class="eyebrow">听觉科学 · 临床听力学 · 听力学临床博士教育</p>
+<p class="eyebrow">听觉科学 · 临床听力学 · 临床博士教育</p>
 <h1 lang="zh-Hans">李明爽</h1>
 <p class="english-name" lang="en">Mingshuang Li</p>
 <p class="degree-line">Ph.D., CCC-A</p>
@@ -430,9 +459,10 @@
 </p>
 <p class="lead">李明爽，德克萨斯大学奥斯汀分校博士，现任加州州立大学北岭分校（CSUN）沟通障碍与科学系助理教授、ASHA 认证及加州执照听力师，并负责 CSUN 听力科学实验室。他的研究聚焦于不利聆听条件下的言语感知与言语增强，综合运用心理声学方法、信号处理、听觉电生理和临床听力学。他同时担任学术期刊专题编辑、客座编辑和同行评审专家。</p>
 <p class="lead-secondary">在 CSUN，他负责听觉科学实验室的研究与学生培养，承担 Au.D. 项目的核心课程教学，指导 Au.D. 毕业研究，并在诊断听力学、听觉电生理和前庭听力学方面提供临床督导。他曾任 Au.D. 项目代理主任，并持续参与学生专业发展。</p>
-<div aria-label="专业概况快捷链接" class="hero-highlights">
+<div class="work-achievements-heading"><h2>工作与成绩</h2></div>
+<div aria-label="工作与成绩快捷链接" class="hero-highlights">
 <a class="hero-highlight" href="#research"><strong>研究</strong><span>言语增强、噪声中言语感知、FFR 与 cABR</span></a>
-<a class="hero-highlight" href="#teaching"><strong>听力学临床博士教育</strong><span>核心课程教学、研究指导与学生培养</span></a>
+<a class="hero-highlight" href="#teaching"><strong>临床博士教育</strong><span>核心课程教学、研究指导与学生培养</span></a>
 <a class="hero-highlight" href="#clinical"><strong>临床听力学</strong><span>听力、电生理、前庭评估与临床督导</span></a>
 <a class="hero-highlight" href="#service"><strong>服务与领导</strong><span>实验室、项目、学生组织与编辑服务</span></a>
 </div>
