@@ -526,7 +526,6 @@
   .hero-highlights > a.hero-highlight > span { font-size: 0.80rem !important; }
 }
 </style>
-
 <style>
 /* Make Work & Achievements cards visibly clickable */
 .work-achievements-hint {
@@ -597,14 +596,30 @@
   }
 }
 </style>
+<style>
+    .research-support-block {
+      margin-top: 3rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid rgba(95, 104, 117, 0.2);
+    }
+    .research-support-block .section-heading { margin-bottom: 1.4rem; }
+    .card-grid.three .card p + p { margin-top: 1rem; }
+    .grant-list {
+      margin: 1.35rem 0 0;
+      padding-left: 1.2rem;
+      color: var(--text, #2f3540);
+    }
+    .grant-list li { margin: 0.55rem 0; line-height: 1.55; }
 
-</head>
+    @media (max-width: 760px) {
+      .research-support-block { margin-top: 2.25rem; padding-top: 2rem; }
+    }
+    </style></head>
 <body>
 <header class="site-header">
 <a class="brand" href="#top">李明爽</a>
 <div aria-label="Language selection" class="language-switch"><a href="index.html" lang="en">English</a><span aria-current="page" class="active" lang="zh-Hans">简体中文</span></div><button aria-expanded="false" aria-label="打开导航菜单" class="nav-toggle" type="button">菜单</button>
 <nav aria-label="Primary navigation" class="nav">
-
 <a href="#research">研究</a>
 <a href="#publications">学术成果</a>
 <a href="#presentations">学术报告</a>
@@ -723,32 +738,50 @@
 </dl>
 </aside>
 </section>
-
 <section class="section muted" id="research">
 <div class="section-heading">
 <p class="eyebrow">研究</p>
 <h2>行为、神经与转化研究方法</h2>
 </div>
+<div class="research-question">
+<p class="eyebrow">研究愿景</p>
+<blockquote>如何通过行为、神经和信号处理方法改善不利聆听条件下的言语感知？</blockquote>
+</div>
 <div class="card-grid three">
 <article class="card featured">
 <p class="card-label">主要研究方向</p>
 <h3>言语增强</h3>
-<p>开发并评估基于共振峰的言语增强策略，改善噪声、低信噪比及声源端衰减条件下的言语感知。</p>
+<p>开发有针对性的信号处理方法，以改善背景噪声、口罩声学衰减及听力损失等不利聆听条件下的言语感知。</p>
+<p><strong>代表性研究主题：</strong>自然语音与 N95 口罩衰减语音的共振峰增强、F2–F3 联合增强，以及噪声类型、信噪比和听者特征的影响。</p>
 </article>
 <article class="card">
 <p class="card-label">发展中的研究方向</p>
-<h3>FFR 与 cABR</h3>
-<p>研究复杂声音的神经编码，包括言语内容以及频谱与时间调制对听觉神经反应的影响。</p>
+<h3>听觉电生理</h3>
+<p>利用听觉脑干反应和频率跟随反应，研究语音及复杂声音的神经编码。</p>
+<p><strong>代表性研究主题：</strong>语音内容、频谱调制和时间调制对 cABR/FFR 的影响，以及具有临床应用潜力的电生理测量方法。</p>
 </article>
 <article class="card">
 <p class="card-label">研究基础</p>
-<h3>言语感知</h3>
-<p>研究语言经验、语音类别映射、心理声学敏感性、掩蔽释放、音高加工以及噪声中的言语感知。</p>
+<h3>言语感知与心理声学</h3>
+<p>研究声学线索、语言经验及听觉加工如何影响言语和音高感知。</p>
+<p><strong>代表性研究主题：</strong>噪声中的元音与辅音感知、共振峰线索敏感性、掩蔽释放、音高加工，以及先天性失歌症人群的听觉加工。</p>
 </article>
 </div>
-<div class="research-question">
-<p class="eyebrow">研究愿景</p>
-<blockquote>如何通过行为、神经和信号处理方法改善不利聆听条件下的言语感知？</blockquote>
+<div class="research-support-block">
+<div class="section-heading">
+<p class="eyebrow">科研资助</p>
+<h2>CSUN 校内科研支持</h2>
+</div>
+<div class="metric-grid">
+<article><strong>3</strong><span>项 CSUN 校内科研资助</span></article>
+<article><strong>2022–2027</strong><span>持续获得校内科研支持</span></article>
+<article><strong>经费 + 时间</strong><span>科研经费与减课支持</span></article>
+</div>
+<ul class="grant-list">
+<li><strong>2026–2027：</strong>Faculty Research Project Development Initiative — 6 学分减课支持</li>
+<li><strong>2024–2025：</strong>Pathways to Tenure Grant — 3 学分减课支持</li>
+<li><strong>2022–2023：</strong>Research, Scholarship, and Creative Activity Award — 5,000 美元</li>
+</ul>
 </div>
 </section>
 <section class="section" id="publications">
@@ -918,22 +951,7 @@
 <article><span>同行评审</span><div><h3>期刊审稿人</h3><p>为 JSLHR、Frontiers in Psychology、JMIR 系列期刊及 Journal of Psycholinguistic Research 审稿。</p></div></article>
 </div>
 </section>
-<section class="section" id="funding">
-<div class="section-heading">
-<p class="eyebrow">研究支持</p>
-<h2>部分科研资助与奖励</h2>
-</div>
-<div class="metric-grid">
-<article><strong>3</strong><span>项 CSUN 校内科研支持</span></article>
-<article><strong>项目负责人</strong><span>言语增强及 FFR/cABR 项目</span></article>
-<article><strong>2022–2026</strong><span>持续获得 CSUN 研究支持</span></article>
-</div>
-<ul class="grant-list">
-<li>2026：Faculty Research Project Development Initiative — 6 学分减课支持</li>
-<li>2024–2025：Pathways to Tenure Grant — 3 学分减课支持</li>
-<li>2022–2023：Research, Scholarship, and Creative Activity Award — 5,000 美元</li>
-</ul>
-</section>
+
 <section class="section collaborate" id="collaborate">
 <div>
 <p class="eyebrow">合作交流</p>

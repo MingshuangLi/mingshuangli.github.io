@@ -544,7 +544,6 @@
   .hero-highlights > a.hero-highlight > span { font-size: 0.80rem !important; }
 }
 </style>
-
 <style>
 /* Make Work & Achievements cards visibly clickable */
 .work-achievements-hint {
@@ -615,14 +614,30 @@
   }
 }
 </style>
+<style>
+    .research-support-block {
+      margin-top: 3rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid rgba(95, 104, 117, 0.2);
+    }
+    .research-support-block .section-heading { margin-bottom: 1.4rem; }
+    .card-grid.three .card p + p { margin-top: 1rem; }
+    .grant-list {
+      margin: 1.35rem 0 0;
+      padding-left: 1.2rem;
+      color: var(--text, #2f3540);
+    }
+    .grant-list li { margin: 0.55rem 0; line-height: 1.55; }
 
-</head>
+    @media (max-width: 760px) {
+      .research-support-block { margin-top: 2.25rem; padding-top: 2rem; }
+    }
+    </style></head>
 <body>
 <header class="site-header">
 <a class="brand" href="#top">Mingshuang Li</a>
 <div aria-label="Language selection" class="language-switch"><span aria-current="page" class="active">English</span><a href="zh-cn.html" lang="zh-Hans">简体中文</a></div><button aria-expanded="false" aria-label="Open navigation" class="nav-toggle" type="button">Menu</button>
 <nav aria-label="Primary navigation" class="nav">
-
 <a href="#research">Research</a>
 <a href="#publications">Publications</a>
 <a href="#presentations">Presentations</a>
@@ -741,32 +756,50 @@
 </dl>
 </aside>
 </section>
-
 <section class="section muted" id="research">
 <div class="section-heading">
 <p class="eyebrow">Research</p>
 <h2>Behavioral, neural, and translational approaches</h2>
 </div>
+<div class="research-question">
+<p class="eyebrow">Program vision</p>
+<blockquote>How can behavioral, neural, and signal-processing approaches improve speech perception under degraded listening conditions?</blockquote>
+</div>
 <div class="card-grid three">
 <article class="card featured">
 <p class="card-label">Primary program</p>
 <h3>Speech enhancement</h3>
-<p>Developing and evaluating formant-based enhancement strategies for speech affected by noise, reduced signal-to-noise ratio, and source-related muffling.</p>
+<p>Developing targeted signal-processing strategies to improve speech perception under degraded listening conditions, including background noise, face-mask attenuation, and hearing loss.</p>
+<p><strong>Selected topics:</strong> Formant enhancement for natural and N95-muffled speech; combined F2–F3 enhancement; effects of noise type, signal-to-noise ratio, and listener characteristics.</p>
 </article>
 <article class="card">
 <p class="card-label">Growing program</p>
-<h3>FFR and cABR</h3>
-<p>Investigating neural encoding of complex sounds, including effects of speech content and spectral and temporal modulation.</p>
+<h3>Auditory electrophysiology</h3>
+<p>Using auditory brainstem responses and frequency-following responses to investigate the neural encoding of speech and complex sounds.</p>
+<p><strong>Selected topics:</strong> Effects of speech content and spectral and temporal modulation on cABR/FFR; development of clinically relevant electrophysiological measures.</p>
 </article>
 <article class="card">
-<p class="card-label">Foundation</p>
-<h3>Speech perception</h3>
-<p>Studying language experience, category mapping, psychoacoustic sensitivity, masking release, pitch processing, and speech perception in noise.</p>
+<p class="card-label">Research foundation</p>
+<h3>Speech perception &amp; psychoacoustics</h3>
+<p>Examining how acoustic cues, language experience, and auditory processing shape speech and pitch perception.</p>
+<p><strong>Selected topics:</strong> Vowel and consonant perception in noise, formant-cue sensitivity, masking release, pitch processing, and auditory processing in congenital amusia.</p>
 </article>
 </div>
-<div class="research-question">
-<p class="eyebrow">Program vision</p>
-<blockquote>How can behavioral, neural, and signal-processing approaches improve speech perception under degraded listening conditions?</blockquote>
+<div class="research-support-block">
+<div class="section-heading">
+<p class="eyebrow">Research support</p>
+<h2>CSUN internal research support</h2>
+</div>
+<div class="metric-grid">
+<article><strong>3</strong><span>CSUN internal research grants</span></article>
+<article><strong>2022–2027</strong><span>Continuous internal research support</span></article>
+<article><strong>Funding + time</strong><span>Research funding and reassigned time</span></article>
+</div>
+<ul class="grant-list">
+<li><strong>2026–2027:</strong> Faculty Research Project Development Initiative — 6 units of reassigned time</li>
+<li><strong>2024–2025:</strong> Pathways to Tenure Grant — 3 units of reassigned time</li>
+<li><strong>2022–2023:</strong> Research, Scholarship, and Creative Activity Award — $5,000</li>
+</ul>
 </div>
 </section>
 <section class="section" id="publications">
@@ -940,22 +973,7 @@
 <article><span>Peer review</span><div><h3>Journal reviewer</h3><p>Reviewer for JSLHR, Frontiers in Psychology, JMIR journals, and the Journal of Psycholinguistic Research.</p></div></article>
 </div>
 </section>
-<section class="section" id="funding">
-<div class="section-heading">
-<p class="eyebrow">Research support</p>
-<h2>Selected grants and awards</h2>
-</div>
-<div class="metric-grid">
-<article><strong>3</strong><span>CSUN internal research awards</span></article>
-<article><strong>PI</strong><span>Speech enhancement and FFR/cABR projects</span></article>
-<article><strong>2022–2026</strong><span>Continuous CSUN research support</span></article>
-</div>
-<ul class="grant-list">
-<li><strong>2026:</strong> Faculty Research Project Development Initiative — 6 units reassigned time</li>
-<li><strong>2024–2025:</strong> Pathways to Tenure Grant — 3 units reassigned time</li>
-<li><strong>2022–2023:</strong> Research, Scholarship, and Creative Activity Award — $5,000</li>
-</ul>
-</section>
+
 <section class="section collaborate" id="collaborate">
 <div>
 <p class="eyebrow">Collaboration</p>
