@@ -927,6 +927,31 @@ dl dd {
   }
 }
 </style>
+
+<style>
+/* Single-source English shortcut copy: prevents mobile text overlap. */
+.hero-highlights .shortcut-copy {
+  display: block !important;
+}
+@media (max-width: 760px) {
+  .hero-highlights .shortcut-copy {
+    font-size: 0 !important;
+    line-height: 1.34 !important;
+  }
+  .hero-highlights .shortcut-copy::after {
+    content: attr(data-mobile);
+    display: block;
+    font-size: 0.87rem;
+    line-height: 1.34;
+    color: var(--muted, #5f6875);
+  }
+}
+@media (max-width: 390px) {
+  .hero-highlights .shortcut-copy::after {
+    font-size: 0.83rem;
+  }
+}
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -961,10 +986,10 @@ dl dd {
 <p class="lead-secondary">At CSUN, he serves as Supervising Faculty of the Hearing Science Laboratory, teaches across the Au.D. curriculum, advises Au.D. capstone research, and provides clinical supervision in diagnostic, electrophysiological, and vestibular audiology. He previously served as Interim Director of the Au.D. program and contributes to student professional development.</p>
 <div class="work-achievements-heading"><h2>Work &amp; Achievements</h2><p class="work-achievements-hint">Select an area to explore</p></div>
 <div aria-label="Work and achievements" class="hero-highlights">
-<a class="hero-highlight" href="#research"><strong>Research</strong><span class="desktop-button-copy">Research on speech enhancement, psychoacoustics, and auditory electrophysiology</span><span class="mobile-button-copy">Speech enhancement · psychoacoustics · electrophysiology</span></a>
-<a class="hero-highlight" href="#teaching"><strong>Au.D. Education</strong><span class="desktop-button-copy">Teaching, advising, and student mentorship</span><span class="mobile-button-copy">Teaching · advising · mentorship</span></a>
-<a class="hero-highlight" href="#clinical"><strong>Clinical Practice &amp; Supervision</strong><span class="desktop-button-copy">Credentials, clinical practice, and student supervision</span><span class="mobile-button-copy">Credentials · practice · supervision</span></a>
-<a class="hero-highlight" href="#service"><strong>Service &amp; Leadership</strong><span class="desktop-button-copy">Laboratory, program, student, and editorial leadership</span><span class="mobile-button-copy">Lab · program · students · editorial</span></a>
+<a class="hero-highlight" href="#research"><strong>Research</strong><span class="shortcut-copy" data-mobile="Speech enhancement · psychoacoustics · electrophysiology">Research on speech enhancement, psychoacoustics, and auditory electrophysiology</span></a>
+<a class="hero-highlight" href="#teaching"><strong>Au.D. Education</strong><span class="shortcut-copy" data-mobile="Teaching · advising · mentorship">Teaching, advising, and student mentorship</span></a>
+<a class="hero-highlight" href="#clinical"><strong>Clinical Practice &amp; Supervision</strong><span class="shortcut-copy" data-mobile="Credentials · practice · supervision">Credentials, clinical practice, and student supervision</span></a>
+<a class="hero-highlight" href="#service"><strong>Service &amp; Leadership</strong><span class="shortcut-copy" data-mobile="Lab · program · students · editorial">Laboratory, program, student, and editorial leadership</span></a>
 </div>
 <div class="actions">
 <a class="button primary" href="files/Mingshuang_Li_CV.pdf">Download CV</a>
