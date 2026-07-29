@@ -812,6 +812,24 @@ main li,
   .section-heading h2 { font-size: 1.59rem; }
   .compact-section-title { font-size: 1.57rem !important; }
 }
+
+/* Clearly enlarged section headings: a visible step up while preserving hierarchy. */
+.section-heading h2 {
+  font-size: clamp(2.28rem, 3.45vw, 2.92rem);
+  line-height: 1.14;
+}
+.compact-section-title {
+  font-size: clamp(2.22rem, 3.32vw, 2.84rem) !important;
+  line-height: 1.16;
+}
+@media (max-width: 720px) {
+  .section-heading h2 { font-size: clamp(1.76rem, 7.2vw, 2.12rem); }
+  .compact-section-title { font-size: clamp(1.70rem, 6.95vw, 2.02rem) !important; }
+}
+@media (max-width: 420px) {
+  .section-heading h2 { font-size: 1.72rem; }
+  .compact-section-title { font-size: 1.66rem !important; }
+}
 </style>
 </head>
 <body>
