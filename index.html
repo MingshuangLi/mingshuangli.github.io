@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Academic website of Mingshuang Li (李明爽), Ph.D., CCC-A, Assistant Professor and Dispensing Audiologist at California State University, Northridge. Research interests include speech perception, speech enhancement, auditory electrophysiology, hearing science, and clinical practice and supervision." name="description"/>
+<meta content="Academic website of Mingshuang Li (李明爽), Ph.D., CCC-A, Assistant Professor and Dispensing Audiologist at California State University, Northridge. Research interests include speech perception, speech enhancement, auditory electrophysiology, hearing science, and clinical audiology." name="description"/>
 <meta content="Mingshuang Li (李明爽)" name="author"/>
 <title>Mingshuang Li (李明爽), Ph.D., CCC-A | Audiology</title>
 <link href="assets/styles.css" rel="stylesheet"/>
@@ -12,14 +12,14 @@
 <meta content="website" property="og:type"/>
 <meta content="https://mingshuangli.github.io/" property="og:url"/>
 <meta content="Mingshuang Li (李明爽), Ph.D., CCC-A | Audiology" property="og:title"/>
-<meta content="Assistant Professor and Dispensing Audiologist at CSUN. Research in speech perception, speech enhancement, auditory electrophysiology, and clinical practice and supervision." property="og:description"/>
+<meta content="Assistant Professor and Dispensing Audiologist at CSUN. Research in speech perception, speech enhancement, auditory electrophysiology, and clinical audiology." property="og:description"/>
 <meta content="https://mingshuangli.github.io/assets/social-preview.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="Mingshuang Li, Assistant Professor and Dispensing Audiologist at CSUN" property="og:image:alt"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Mingshuang Li (李明爽), Ph.D., CCC-A | Audiology" name="twitter:title"/>
-<meta content="Assistant Professor and Dispensing Audiologist at CSUN. Research in speech perception, speech enhancement, auditory electrophysiology, and clinical practice and supervision." name="twitter:description"/>
+<meta content="Assistant Professor and Dispensing Audiologist at CSUN. Research in speech perception, speech enhancement, auditory electrophysiology, and clinical audiology." name="twitter:description"/>
 <meta content="https://mingshuangli.github.io/assets/social-preview.jpg" name="twitter:image"/>
 <script type="application/ld+json">
   {
@@ -105,7 +105,7 @@
     }
     .hero-highlights {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 12px;
       max-width: 1080px;
       margin: 1.1rem 0 1.5rem;
@@ -149,7 +149,7 @@
 
     .profile-links {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 9px;
       width: 100%;
       max-width: 1100px;
@@ -270,33 +270,8 @@
       .credentials-grid .card {
         min-height: auto;
       }
-      .work-achievements-heading {
-        margin-top: 1.05rem;
-      }
-      .work-achievements-heading h2 {
-        font-size: 1.42rem;
-      }
       .hero-highlights {
-        grid-template-columns: 1fr;
-        gap: 10px;
-      }
-      a.hero-highlight {
-        display: grid;
-        grid-template-columns: minmax(110px, 0.42fr) minmax(0, 0.58fr);
-        align-items: center;
-        column-gap: 14px;
-        min-height: 76px;
-        padding: 13px 15px;
-        text-align: left;
-      }
-      .hero-highlight strong {
-        margin-bottom: 0;
-        font-size: 0.98rem;
-        line-height: 1.3;
-      }
-      .hero-highlight span {
-        font-size: 0.86rem;
-        line-height: 1.4;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
       .profile-links {
         display: grid;
@@ -334,6 +309,11 @@
         grid-column: 1 / -1;
         width: calc(50% - 5px);
         justify-self: center;
+      }
+    }
+    @media (max-width: 520px) {
+      .hero-highlights {
+        grid-template-columns: 1fr;
       }
     }
     @media (max-width: 350px) {
@@ -397,15 +377,6 @@
       .language-switch span { min-height: 34px; padding: 0.36rem 0.62rem; font-size: 0.84rem; }
     }
 
-    .work-achievements-heading {
-      margin: 1.25rem 0 0.2rem;
-    }
-    .work-achievements-heading h2 {
-      margin: 0;
-      font-size: clamp(1.5rem, 2.2vw, 2rem);
-      line-height: 1.18;
-    }
-
     /* Clickable profile highlight cards */
     .hero-highlights {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -445,44 +416,6 @@
   }
 }
 </style>
-
-<style>
-/* Final mobile override: horizontal work-and-achievement cards */
-@media (max-width: 700px) {
-  .hero-highlights {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 10px !important;
-    width: 100% !important;
-  }
-
-  .hero-highlights a.hero-highlight {
-    display: grid !important;
-    grid-template-columns: minmax(7.2rem, 38%) minmax(0, 62%) !important;
-    align-items: center !important;
-    column-gap: 12px !important;
-    width: 100% !important;
-    min-height: 70px !important;
-    padding: 12px 14px !important;
-    text-align: left !important;
-  }
-
-  .hero-highlights .hero-highlight strong {
-    display: block !important;
-    margin: 0 !important;
-    font-size: 0.96rem !important;
-    line-height: 1.25 !important;
-  }
-
-  .hero-highlights .hero-highlight span {
-    display: block !important;
-    margin: 0 !important;
-    font-size: 0.84rem !important;
-    line-height: 1.38 !important;
-  }
-}
-</style>
-
 </head>
 <body>
 <header class="site-header">
@@ -502,7 +435,7 @@
 <main id="top">
 <section class="hero section">
 <div class="hero-copy">
-<p class="eyebrow">Hearing Science · Clinical Practice &amp; Supervision · AuD Education</p>
+<p class="eyebrow">Hearing Science · Clinical Audiology · AuD Education</p>
 <h1>Mingshuang Li</h1>
 <p class="chinese-name" lang="zh-Hans">李明爽</p>
 <p class="degree-line">Ph.D., CCC-A</p>
@@ -514,13 +447,12 @@
     mingshuang.li@csun.edu
   </a>
 </p>
-<p class="lead">Mingshuang Li is an Assistant Professor and Dispensing Audiologist in the Department of Communication Disorders and Sciences at California State University, Northridge. His research focuses on speech perception and speech enhancement under degraded listening conditions, integrating psychoacoustic methods, signal processing, auditory electrophysiology, and clinical practice and supervision. He also serves as a topic editor, guest editor, and peer reviewer for scholarly journals.</p>
+<p class="lead">Mingshuang Li is an Assistant Professor and Dispensing Audiologist in the Department of Communication Disorders and Sciences at California State University, Northridge. His research focuses on speech perception and speech enhancement under degraded listening conditions, integrating psychoacoustic methods, signal processing, auditory electrophysiology, and clinical audiology. He also serves as a topic editor, guest editor, and peer reviewer for scholarly journals.</p>
 <p class="lead-secondary">At CSUN, he serves as Supervising Faculty of the Hearing Science Laboratory, teaches across the Au.D. curriculum, advises Au.D. capstone research, and provides clinical supervision in diagnostic, electrophysiological, and vestibular audiology. He previously served as Interim Director of the Au.D. program and contributes to student professional development.</p>
-<div class="work-achievements-heading"><h2>Work &amp; Achievements</h2></div>
-<div aria-label="Work and achievements" class="hero-highlights">
+<div aria-label="Professional profile highlights" class="hero-highlights">
 <a class="hero-highlight" href="#research"><strong>Research</strong><span>Speech enhancement, speech-in-noise perception, FFR and cABR</span></a>
 <a class="hero-highlight" href="#teaching"><strong>Au.D. Education</strong><span>Core teaching, research advising, and student mentorship</span></a>
-<a class="hero-highlight" href="#clinical"><strong>Clinical Practice &amp; Supervision</strong><span>Hearing, electrophysiology, vestibular assessment, and supervision</span></a>
+<a class="hero-highlight" href="#clinical"><strong>Clinical Audiology</strong><span>Hearing, electrophysiology, vestibular assessment, and supervision</span></a>
 <a class="hero-highlight" href="#service"><strong>Service &amp; Leadership</strong><span>Laboratory, program, student organization, and editorial service</span></a>
 </div>
 <div class="actions">
