@@ -445,6 +445,44 @@
   }
 }
 </style>
+
+<style>
+/* Final mobile override: horizontal work-and-achievement cards */
+@media (max-width: 700px) {
+  .hero-highlights {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  .hero-highlights a.hero-highlight {
+    display: grid !important;
+    grid-template-columns: minmax(7.2rem, 38%) minmax(0, 62%) !important;
+    align-items: center !important;
+    column-gap: 12px !important;
+    width: 100% !important;
+    min-height: 70px !important;
+    padding: 12px 14px !important;
+    text-align: left !important;
+  }
+
+  .hero-highlights .hero-highlight strong {
+    display: block !important;
+    margin: 0 !important;
+    font-size: 0.96rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .hero-highlights .hero-highlight span {
+    display: block !important;
+    margin: 0 !important;
+    font-size: 0.84rem !important;
+    line-height: 1.38 !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <header class="site-header">
