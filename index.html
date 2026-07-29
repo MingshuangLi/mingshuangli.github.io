@@ -805,12 +805,7 @@ dl dd {
 
 
 <style>
-/* Desktop uses natural phrases; mobile keeps compact dot-separated copy. */
-.mobile-button-copy { display: none !important; }
-@media (max-width: 760px) {
-  .hero-highlights .desktop-button-copy { display: none !important; }
-  .hero-highlights .mobile-button-copy { display: block !important; }
-}
+/* Work & Achievements cards use one shared description on desktop and mobile. */
 </style>
 
 <style>
@@ -866,69 +861,6 @@ dl dd {
   .compact-section-title { font-size: 1.53rem !important; }
 }
 </style>
-
-<style>
-/* One more clearly visible title increase; still restrained relative to the early large version. */
-.section-heading h2 {
-  font-size: clamp(2.12rem, 3.18vw, 2.68rem);
-}
-.compact-section-title {
-  font-size: clamp(2.08rem, 3.08vw, 2.63rem) !important;
-}
-@media (max-width: 760px) {
-  .section-heading h2 { font-size: clamp(1.66rem, 6.75vw, 1.98rem); }
-  .compact-section-title { font-size: clamp(1.63rem, 6.55vw, 1.90rem) !important; }
-}
-@media (max-width: 390px) {
-  .section-heading h2 { font-size: 1.61rem; }
-  .compact-section-title { font-size: 1.58rem !important; }
-}
-</style>
-
-
-<style>
-/* Definitive responsive shortcut copy: desktop and mobile never render together. */
-.hero-highlights .desktop-button-copy {
-  display: block !important;
-}
-.hero-highlights .mobile-button-copy {
-  display: none !important;
-}
-
-/* Final section-title scale: visibly larger while preserving hierarchy. */
-.section-heading h2 {
-  font-size: clamp(2.54rem, 3.78vw, 3.16rem);
-}
-.compact-section-title {
-  font-size: clamp(2.48rem, 3.66vw, 3.06rem) !important;
-}
-
-@media (max-width: 760px) {
-  .hero-highlights .desktop-button-copy {
-    display: none !important;
-  }
-  .hero-highlights .mobile-button-copy {
-    display: block !important;
-  }
-  .section-heading h2 {
-    font-size: clamp(1.96rem, 7.70vw, 2.28rem);
-  }
-  .compact-section-title {
-    font-size: clamp(1.92rem, 7.42vw, 2.18rem) !important;
-  }
-}
-
-@media (max-width: 390px) {
-  .section-heading h2 {
-    font-size: 1.90rem;
-  }
-  .compact-section-title {
-    font-size: 1.86rem !important;
-  }
-}
-</style>
-
-
 </head>
 <body>
 <header class="site-header">
@@ -963,10 +895,10 @@ dl dd {
 <p class="lead-secondary">At CSUN, he serves as Supervising Faculty of the Hearing Science Laboratory, teaches across the Au.D. curriculum, advises Au.D. capstone research, and provides clinical supervision in diagnostic, electrophysiological, and vestibular audiology. He previously served as Interim Director of the Au.D. program and contributes to student professional development.</p>
 <div class="work-achievements-heading"><h2>Work &amp; Achievements</h2><p class="work-achievements-hint">Select an area to explore</p></div>
 <div aria-label="Work and achievements" class="hero-highlights">
-<a class="hero-highlight" href="#research"><strong>Research</strong><span class="shortcut-copy">Speech enhancement, psychoacoustics, and electrophysiology</span></a>
-<a class="hero-highlight" href="#teaching"><strong>Au.D. Education</strong><span class="shortcut-copy">Teaching, advising, and mentorship</span></a>
-<a class="hero-highlight" href="#clinical"><strong>Clinical Practice &amp; Supervision</strong><span class="shortcut-copy">Clinical credentials, practice, and supervision</span></a>
-<a class="hero-highlight" href="#service"><strong>Service &amp; Leadership</strong><span class="shortcut-copy">Laboratory, program, student, and editorial service</span></a>
+<a class="hero-highlight" href="#research"><strong>Research</strong><span>Speech enhancement, psychoacoustics, and electrophysiology</span></a>
+<a class="hero-highlight" href="#teaching"><strong>Au.D. Education</strong><span>Teaching, advising, and mentorship</span></a>
+<a class="hero-highlight" href="#clinical"><strong>Clinical Practice &amp; Supervision</strong><span>Credentials, practice, and supervision</span></a>
+<a class="hero-highlight" href="#service"><strong>Service &amp; Leadership</strong><span>Laboratory, program, student, and editorial service</span></a>
 </div>
 <div class="actions">
 <a class="button primary" href="files/Mingshuang_Li_CV.pdf">Download CV</a>
