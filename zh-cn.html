@@ -618,7 +618,25 @@
       .research-question { margin-bottom: 1.5rem; }
       .research-support-block { margin-top: 2.25rem; padding-top: 2rem; }
     }
-    </style></head>
+    </style>
+<style>
+  /* Tighter spacing for the three research-grant summary cards. */
+  .research-support-block .metric-grid {
+    gap: 0.8rem;
+  }
+  .research-support-block .metric-grid article {
+    padding: 1rem 1.1rem;
+  }
+  @media (max-width: 760px) {
+    .research-support-block .metric-grid {
+      gap: 0.6rem;
+    }
+    .research-support-block .metric-grid article {
+      padding: 0.9rem 1rem;
+    }
+  }
+</style>
+</head>
 <body>
 <header class="site-header">
 <a class="brand" href="#top">李明爽</a>
@@ -773,8 +791,8 @@
 </div>
 <div class="research-support-block">
 <div class="section-heading">
-<p class="eyebrow">科研资助</p>
-<h2>CSUN 校内科研支持</h2>
+<p class="eyebrow">科研资助项目</p>
+<h2>CSUN 校内科研资助</h2>
 </div>
 <div class="metric-grid">
 <article><strong>3</strong><span>项 CSUN 校内科研资助</span></article>
