@@ -526,6 +526,78 @@
   .hero-highlights > a.hero-highlight > span { font-size: 0.80rem !important; }
 }
 </style>
+
+<style>
+/* Make Work & Achievements cards visibly clickable */
+.work-achievements-hint {
+  margin: 0.35rem 0 0;
+  color: #6b7280;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+.hero-highlights a.hero-highlight {
+  position: relative;
+  padding-right: 2.8rem;
+  border: 1.5px solid rgba(140, 29, 64, 0.42);
+  cursor: pointer;
+  transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+}
+.hero-highlights a.hero-highlight::after {
+  content: "→";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8c1d40;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1;
+  transition: transform 160ms ease;
+}
+.hero-highlights a.hero-highlight:hover,
+.hero-highlights a.hero-highlight:focus-visible {
+  border-color: #8c1d40;
+  background: #fff8fa;
+  box-shadow: 0 8px 20px rgba(31, 41, 55, 0.10);
+  transform: translateY(-2px);
+  outline: none;
+}
+.hero-highlights a.hero-highlight:hover::after,
+.hero-highlights a.hero-highlight:focus-visible::after {
+  transform: translate(4px, -50%);
+}
+@media (max-width: 760px) {
+  .work-achievements-hint {
+    font-size: 0.88rem;
+    margin-top: 0.25rem;
+  }
+  .hero-highlights > a.hero-highlight {
+    grid-template-columns: minmax(7rem, 37%) minmax(0, 1fr) 22px !important;
+    padding: 12px 12px 12px 14px !important;
+  }
+  .hero-highlights > a.hero-highlight::after {
+    position: static;
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    transform: none;
+    font-size: 1.18rem;
+  }
+  .hero-highlights > a.hero-highlight > strong {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .hero-highlights > a.hero-highlight > span {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .hero-highlights > a.hero-highlight:hover::after,
+  .hero-highlights > a.hero-highlight:focus-visible::after {
+    transform: translateX(3px);
+  }
+}
+</style>
+
 </head>
 <body>
 <header class="site-header">
@@ -559,7 +631,7 @@
 </p>
 <p class="lead">李明爽，德克萨斯大学奥斯汀分校博士，现任加州州立大学北岭分校（CSUN）沟通障碍与科学系助理教授、ASHA 认证及加州执照听力师，并负责 CSUN 听力科学实验室。他的研究聚焦于不利聆听条件下的言语感知与言语增强，综合运用心理声学方法、信号处理、听觉电生理和临床实践与督导。他同时担任学术期刊专题编辑、客座编辑和同行评审专家。</p>
 <p class="lead-secondary">在 CSUN，他负责听觉科学实验室的研究与学生培养，承担 Au.D. 项目的核心课程教学，指导 Au.D. 毕业研究，并在诊断听力学、听觉电生理和前庭听力学方面提供临床督导。他曾任 Au.D. 项目代理主任，并持续参与学生专业发展。</p>
-<div class="work-achievements-heading"><h2>工作与成绩</h2></div>
+<div class="work-achievements-heading"><h2>工作与成绩</h2><p class="work-achievements-hint">选择一个领域查看详情</p></div>
 <div aria-label="工作与成绩快捷链接" class="hero-highlights">
 <a class="hero-highlight" href="#research"><strong>研究</strong><span>言语增强、噪声中言语感知、FFR 与 cABR</span></a>
 <a class="hero-highlight" href="#teaching"><strong>临床博士教育</strong><span>核心课程教学、研究指导与学生培养</span></a>
@@ -857,7 +929,7 @@
 <article><strong>2022–2026</strong><span>持续获得 CSUN 研究支持</span></article>
 </div>
 <ul class="grant-list">
-<li>2026：Faculty Research Project Development Initiative — 3 学分减课支持</li>
+<li>2026：Faculty Research Project Development Initiative — 6 学分减课支持</li>
 <li>2024–2025：Pathways to Tenure Grant — 3 学分减课支持</li>
 <li>2022–2023：Research, Scholarship, and Creative Activity Award — 5,000 美元</li>
 </ul>

@@ -544,6 +544,78 @@
   .hero-highlights > a.hero-highlight > span { font-size: 0.80rem !important; }
 }
 </style>
+
+<style>
+/* Make Work & Achievements cards visibly clickable */
+.work-achievements-hint {
+  margin: 0.35rem 0 0;
+  color: #6b7280;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+.hero-highlights a.hero-highlight {
+  position: relative;
+  padding-right: 2.8rem;
+  border: 1.5px solid rgba(140, 29, 64, 0.42);
+  cursor: pointer;
+  transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+}
+.hero-highlights a.hero-highlight::after {
+  content: "→";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8c1d40;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1;
+  transition: transform 160ms ease;
+}
+.hero-highlights a.hero-highlight:hover,
+.hero-highlights a.hero-highlight:focus-visible {
+  border-color: #8c1d40;
+  background: #fff8fa;
+  box-shadow: 0 8px 20px rgba(31, 41, 55, 0.10);
+  transform: translateY(-2px);
+  outline: none;
+}
+.hero-highlights a.hero-highlight:hover::after,
+.hero-highlights a.hero-highlight:focus-visible::after {
+  transform: translate(4px, -50%);
+}
+@media (max-width: 760px) {
+  .work-achievements-hint {
+    font-size: 0.88rem;
+    margin-top: 0.25rem;
+  }
+  .hero-highlights > a.hero-highlight {
+    grid-template-columns: minmax(7rem, 37%) minmax(0, 1fr) 22px !important;
+    padding: 12px 12px 12px 14px !important;
+  }
+  .hero-highlights > a.hero-highlight::after {
+    position: static;
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    transform: none;
+    font-size: 1.18rem;
+  }
+  .hero-highlights > a.hero-highlight > strong {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .hero-highlights > a.hero-highlight > span {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .hero-highlights > a.hero-highlight:hover::after,
+  .hero-highlights > a.hero-highlight:focus-visible::after {
+    transform: translateX(3px);
+  }
+}
+</style>
+
 </head>
 <body>
 <header class="site-header">
@@ -577,7 +649,7 @@
 </p>
 <p class="lead">Mingshuang Li is an Assistant Professor and Dispensing Audiologist in the Department of Communication Disorders and Sciences at California State University, Northridge. His research focuses on speech perception and speech enhancement under degraded listening conditions, integrating psychoacoustic methods, signal processing, auditory electrophysiology, and clinical practice and supervision. He also serves as a topic editor, guest editor, and peer reviewer for scholarly journals.</p>
 <p class="lead-secondary">At CSUN, he serves as Supervising Faculty of the Hearing Science Laboratory, teaches across the Au.D. curriculum, advises Au.D. capstone research, and provides clinical supervision in diagnostic, electrophysiological, and vestibular audiology. He previously served as Interim Director of the Au.D. program and contributes to student professional development.</p>
-<div class="work-achievements-heading"><h2>Work &amp; Achievements</h2></div>
+<div class="work-achievements-heading"><h2>Work &amp; Achievements</h2><p class="work-achievements-hint">Select an area to explore</p></div>
 <div aria-label="Work and achievements" class="hero-highlights">
 <a class="hero-highlight" href="#research"><strong>Research</strong><span>Speech enhancement, speech-in-noise perception, FFR and cABR</span></a>
 <a class="hero-highlight" href="#teaching"><strong>Au.D. Education</strong><span>Core teaching, research advising, and student mentorship</span></a>
@@ -879,7 +951,7 @@
 <article><strong>2022–2026</strong><span>Continuous CSUN research support</span></article>
 </div>
 <ul class="grant-list">
-<li><strong>2026:</strong> Faculty Research Project Development Initiative — 3 units reassigned time</li>
+<li><strong>2026:</strong> Faculty Research Project Development Initiative — 6 units reassigned time</li>
 <li><strong>2024–2025:</strong> Pathways to Tenure Grant — 3 units reassigned time</li>
 <li><strong>2022–2023:</strong> Research, Scholarship, and Creative Activity Award — $5,000</li>
 </ul>
