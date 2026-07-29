@@ -376,27 +376,28 @@
       .language-switch a,
       .language-switch span { min-height: 34px; padding: 0.36rem 0.62rem; font-size: 0.84rem; }
     }
-</style>
-<link href="https://mingshuangli.github.io/" hreflang="en" rel="alternate"/><link href="https://mingshuangli.github.io/zh-cn.html" hreflang="zh-Hans" rel="alternate"/><link href="https://mingshuangli.github.io/" hreflang="x-default" rel="alternate"/>
-<style>
-/* Improve readability of all red section labels */
-.eyebrow,
-.card-label {
-  font-size: 1rem !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.04em !important;
-  line-height: 1.4 !important;
-}
 
-@media (max-width: 700px) {
-  .eyebrow,
-  .card-label {
-    font-size: 0.98rem !important;
-    letter-spacing: 0.03em !important;
-  }
-}
+    /* Clickable profile highlight cards */
+    .hero-highlights {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    a.hero-highlight {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+    a.hero-highlight:hover,
+    a.hero-highlight:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(157, 23, 77, 0.42);
+      box-shadow: 0 10px 24px rgba(31, 41, 55, 0.08);
+      outline: none;
+    }
+
 </style>
-</head>
+<link href="https://mingshuangli.github.io/" hreflang="en" rel="alternate"/><link href="https://mingshuangli.github.io/zh-cn.html" hreflang="zh-Hans" rel="alternate"/><link href="https://mingshuangli.github.io/" hreflang="x-default" rel="alternate"/></head>
 <body>
 <header class="site-header">
 <a class="brand" href="#top">李明爽</a>
@@ -405,6 +406,7 @@
 <a href="#credentials">资质证书</a>
 <a href="#research">研究</a>
 <a href="#publications">学术成果</a>
+<a href="#presentations">学术报告</a>
 <a href="#teaching">教学</a>
 <a href="#clinical">临床</a>
 <a href="#service">领导与服务</a>
@@ -428,11 +430,11 @@
 </p>
 <p class="lead">李明爽，德克萨斯大学奥斯汀分校博士，现任加州州立大学北岭分校（CSUN）沟通障碍与科学系助理教授、ASHA 认证及加州执照听力师，并负责 CSUN 听力科学实验室。他的研究聚焦于不利聆听条件下的言语感知与言语增强，综合运用心理声学方法、信号处理、听觉电生理和临床听力学。他同时担任学术期刊专题编辑、客座编辑和同行评审专家。</p>
 <p class="lead-secondary">在 CSUN，他负责听觉科学实验室的研究与学生培养，承担 Au.D. 项目的核心课程教学，指导 Au.D. 毕业研究，并在诊断听力学、听觉电生理和前庭听力学方面提供临床督导。他曾任 Au.D. 项目代理主任，并持续参与学生专业发展。</p>
-<div aria-label="Professional profile highlights" class="hero-highlights">
-<div class="hero-highlight"><strong>研究</strong><span>言语增强、噪声中言语感知、FFR 与 cABR</span></div>
-<div class="hero-highlight"><strong>Au.D. 教育</strong><span>核心课程教学、研究指导与学生培养</span></div>
-<div class="hero-highlight"><strong>临床听力学</strong><span>听力、电生理、前庭评估与临床督导</span></div>
-<div class="hero-highlight"><strong>服务与领导</strong><span>实验室、项目、学生组织及编辑服务</span></div>
+<div aria-label="专业概况快捷链接" class="hero-highlights">
+<a class="hero-highlight" href="#research"><strong>研究</strong><span>言语增强、噪声中言语感知、FFR 与 cABR</span></a>
+<a class="hero-highlight" href="#teaching"><strong>听力学临床博士教育</strong><span>核心课程教学、研究指导与学生培养</span></a>
+<a class="hero-highlight" href="#clinical"><strong>临床听力学</strong><span>听力、电生理、前庭评估与临床督导</span></a>
+<a class="hero-highlight" href="#service"><strong>服务与领导</strong><span>实验室、项目、学生组织与编辑服务</span></a>
 </div>
 <div class="actions">
 <a class="button primary" href="files/Mingshuang_Li_CV.pdf">下载英文简历</a>
@@ -635,6 +637,26 @@
 </li>
 </ol>
 </section>
+
+<section class="section muted" id="presentations">
+<div class="section-heading split-heading">
+<div>
+<p class="eyebrow">精选学术报告</p>
+<h2>面向专业学界分享研究成果</h2>
+<p class="section-summary">精选展示在声学、听力学及言语语言听觉科学领域国内外专业会议上的学术报告。</p>
+</div>
+<a class="text-link" href="files/Mingshuang_Li_CV.pdf">完整报告记录请见个人简历 →</a>
+</div>
+<div class="timeline">
+<article><span>2026</span><div><h3>第二语言元音知觉与噪声中掩蔽释放：类别映射与共振峰线索敏感性的分离</h3><p>墙报报告，美国声学学会第190届会议，美国宾夕法尼亚州费城。</p></div></article>
+<article><span>2025</span><div><h3>共振峰增强对噪声中句子识别的影响</h3><p>墙报报告，美国声学学会与日本声学学会第六届联合会议，美国夏威夷州檀香山。</p></div></article>
+<article><span>2025</span><div><h3>语音类型、聆听条件和语言经验对共振峰增强知觉效应的影响</h3><p>墙报报告，AAA 2025 与 HearTECH Expo，美国路易斯安那州新奥尔良。</p></div></article>
+<article><span>2024</span><div><h3>听力损失与听力保护</h3><p>主题报告，2024年全美华人学者协会年会，美国加利福尼亚州安大略市。</p></div></article>
+<article><span>2023</span><div><h3>语音类型、聆听条件和语言经验对共振峰增强知觉效应的影响</h3><p>口头技术报告，美国言语语言听力协会年会，美国马萨诸塞州波士顿。</p></div></article>
+<article><span>2023</span><div><h3>语音类型、聆听条件和语言经验对共振峰增强知觉效应的影响</h3><p>墙报报告，美国声学学会第184届会议，美国伊利诺伊州芝加哥。</p></div></article>
+<article><span>2019</span><div><h3>时间调制噪声中言语与非言语声音的共振峰辨别</h3><p>墙报报告，美国声学学会第177届会议，美国肯塔基州路易维尔。</p></div></article>
+</div>
+</section>
 <section class="section muted" id="teaching">
 <div class="section-heading">
 <p class="eyebrow">教学与指导</p>
@@ -702,7 +724,7 @@
 <article><strong>2022–2026</strong><span>持续获得 CSUN 研究支持</span></article>
 </div>
 <ul class="grant-list">
-<li>2026：Faculty Research Project Development Initiative — 6 学分减课支持</li>
+<li>2026：Faculty Research Project Development Initiative — 3 学分减课支持</li>
 <li>2024–2025：Pathways to Tenure Grant — 3 学分减课支持</li>
 <li>2022–2023：Research, Scholarship, and Creative Activity Award — 5,000 美元</li>
 </ul>
