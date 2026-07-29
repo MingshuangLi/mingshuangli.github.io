@@ -654,6 +654,71 @@
     }
   }
 </style>
+
+<style>
+/* Final readability adjustment: slightly larger body and card text without changing hierarchy. */
+main p,
+main li,
+.hero-highlight span,
+.card p,
+.card li,
+.grant-list li,
+.metric-grid article p,
+.metric-grid article span {
+  font-size: 1.02rem;
+  line-height: 1.64;
+}
+
+.hero-highlight strong {
+  font-size: 1.02rem;
+}
+
+.work-achievements-hint {
+  font-size: 0.98rem;
+}
+
+.card h3,
+.clinical-subsection-title {
+  line-height: 1.38;
+}
+
+@media (max-width: 760px) {
+  main p,
+  main li,
+  .card p,
+  .card li,
+  .grant-list li,
+  .metric-grid article p,
+  .metric-grid article span {
+    font-size: 0.98rem;
+    line-height: 1.58;
+  }
+
+  .hero-highlights > a.hero-highlight > strong {
+    font-size: 0.98rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .hero-highlights > a.hero-highlight > span {
+    font-size: 0.9rem !important;
+    line-height: 1.46 !important;
+  }
+
+  .work-achievements-hint {
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-highlights > a.hero-highlight > strong {
+    font-size: 0.94rem !important;
+  }
+  .hero-highlights > a.hero-highlight > span {
+    font-size: 0.86rem !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <header class="site-header">
@@ -688,7 +753,7 @@
 <p class="lead-secondary">At CSUN, he serves as Supervising Faculty of the Hearing Science Laboratory, teaches across the Au.D. curriculum, advises Au.D. capstone research, and provides clinical supervision in diagnostic, electrophysiological, and vestibular audiology. He previously served as Interim Director of the Au.D. program and contributes to student professional development.</p>
 <div class="work-achievements-heading"><h2>Work &amp; Achievements</h2><p class="work-achievements-hint">Select an area to explore</p></div>
 <div aria-label="Work and achievements" class="hero-highlights">
-<a class="hero-highlight" href="#research"><strong>Research</strong><span>Speech enhancement, speech-in-noise perception, FFR and cABR</span></a>
+<a class="hero-highlight" href="#research"><strong>Research</strong><span>Speech enhancement, speech perception &amp; psychoacoustics, and auditory electrophysiology</span></a>
 <a class="hero-highlight" href="#teaching"><strong>Au.D. Education</strong><span>Core teaching, research advising, and student mentorship</span></a>
 <a class="hero-highlight" href="#clinical"><strong>Clinical Practice &amp; Supervision</strong><span>Clinical credentials, professional practice, and Au.D. student supervision</span></a>
 <a class="hero-highlight" href="#service"><strong>Service &amp; Leadership</strong><span>Laboratory, program, student organization, and editorial service</span></a>
@@ -789,22 +854,22 @@
 </div>
 <div class="card-grid three">
 <article class="card featured">
-<p class="card-label">Primary program</p>
+<p class="card-label">Primary research area</p>
 <h3>Speech enhancement</h3>
 <p>Developing targeted signal-processing strategies to improve speech perception under degraded listening conditions, including background noise, face-mask attenuation, and hearing loss.</p>
 <p><strong>Selected topics:</strong> Formant enhancement for natural and N95-muffled speech; combined F2–F3 enhancement; effects of noise type, signal-to-noise ratio, and listener characteristics.</p>
-</article>
-<article class="card">
-<p class="card-label">Growing program</p>
-<h3>Auditory electrophysiology</h3>
-<p>Using auditory brainstem responses and frequency-following responses to investigate the neural encoding of speech and complex sounds.</p>
-<p><strong>Selected topics:</strong> Effects of speech content and spectral and temporal modulation on cABR/FFR; development of clinically relevant electrophysiological measures.</p>
 </article>
 <article class="card">
 <p class="card-label">Research foundation</p>
 <h3>Speech perception &amp; psychoacoustics</h3>
 <p>Examining how acoustic cues, language experience, and auditory processing shape speech and pitch perception.</p>
 <p><strong>Selected topics:</strong> Vowel and consonant perception in noise, formant-cue sensitivity, masking release, pitch processing, and auditory processing in congenital amusia.</p>
+</article>
+<article class="card">
+<p class="card-label">Growing research area</p>
+<h3>Auditory electrophysiology</h3>
+<p>Using auditory brainstem responses and frequency-following responses to investigate the neural encoding of speech and complex sounds.</p>
+<p><strong>Selected topics:</strong> Effects of speech content and spectral and temporal modulation on cABR/FFR; development of clinically relevant electrophysiological measures.</p>
 </article>
 </div>
 <div class="research-support-block">
@@ -915,6 +980,7 @@
 <div class="section-heading">
 <p class="eyebrow">Teaching &amp; mentorship</p>
 <h2>Preparing future audiologists</h2>
+<p class="section-summary">Teaching, research advising, and clinical education in the CSUN Doctor of Audiology (Au.D.) Program.</p>
 </div>
 <div class="two-column cards-inline">
 <article>

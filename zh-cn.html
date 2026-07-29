@@ -636,6 +636,71 @@
     }
   }
 </style>
+
+<style>
+/* Final readability adjustment: slightly larger body and card text without changing hierarchy. */
+main p,
+main li,
+.hero-highlight span,
+.card p,
+.card li,
+.grant-list li,
+.metric-grid article p,
+.metric-grid article span {
+  font-size: 1.02rem;
+  line-height: 1.64;
+}
+
+.hero-highlight strong {
+  font-size: 1.02rem;
+}
+
+.work-achievements-hint {
+  font-size: 0.98rem;
+}
+
+.card h3,
+.clinical-subsection-title {
+  line-height: 1.38;
+}
+
+@media (max-width: 760px) {
+  main p,
+  main li,
+  .card p,
+  .card li,
+  .grant-list li,
+  .metric-grid article p,
+  .metric-grid article span {
+    font-size: 0.98rem;
+    line-height: 1.58;
+  }
+
+  .hero-highlights > a.hero-highlight > strong {
+    font-size: 0.98rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .hero-highlights > a.hero-highlight > span {
+    font-size: 0.9rem !important;
+    line-height: 1.46 !important;
+  }
+
+  .work-achievements-hint {
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-highlights > a.hero-highlight > strong {
+    font-size: 0.94rem !important;
+  }
+  .hero-highlights > a.hero-highlight > span {
+    font-size: 0.86rem !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <header class="site-header">
@@ -670,7 +735,7 @@
 <p class="lead-secondary">在 CSUN，他负责听觉科学实验室的研究与学生培养，承担 Au.D. 项目的核心课程教学，指导 Au.D. 毕业研究，并在诊断听力学、听觉电生理和前庭听力学方面提供临床督导。他曾任 Au.D. 项目代理主任，并持续参与学生专业发展。</p>
 <div class="work-achievements-heading"><h2>工作与成绩</h2><p class="work-achievements-hint">选择一个领域查看详情</p></div>
 <div aria-label="工作与成绩快捷链接" class="hero-highlights">
-<a class="hero-highlight" href="#research"><strong>研究</strong><span>言语增强、噪声中言语感知、FFR 与 cABR</span></a>
+<a class="hero-highlight" href="#research"><strong>研究</strong><span>言语增强、言语感知与心理声学，以及听觉电生理</span></a>
 <a class="hero-highlight" href="#teaching"><strong>临床博士教育</strong><span>核心课程教学、研究指导与学生培养</span></a>
 <a class="hero-highlight" href="#clinical"><strong>临床实践与督导</strong><span>临床资质、专业实践与听力学临床博士学生督导</span></a>
 <a class="hero-highlight" href="#service"><strong>服务与领导</strong><span>实验室、项目、学生组织与编辑服务</span></a>
@@ -777,16 +842,16 @@
 <p><strong>代表性研究主题：</strong>自然语音与 N95 口罩衰减语音的共振峰增强、F2–F3 联合增强，以及噪声类型、信噪比和听者特征的影响。</p>
 </article>
 <article class="card">
-<p class="card-label">发展中的研究方向</p>
-<h3>听觉电生理</h3>
-<p>利用听觉脑干反应和频率跟随反应，研究语音及复杂声音的神经编码。</p>
-<p><strong>代表性研究主题：</strong>语音内容、频谱调制和时间调制对 cABR/FFR 的影响，以及具有临床应用潜力的电生理测量方法。</p>
-</article>
-<article class="card">
 <p class="card-label">研究基础</p>
 <h3>言语感知与心理声学</h3>
 <p>研究声学线索、语言经验及听觉加工如何影响言语和音高感知。</p>
 <p><strong>代表性研究主题：</strong>噪声中的元音与辅音感知、共振峰线索敏感性、掩蔽释放、音高加工，以及先天性失歌症人群的听觉加工。</p>
+</article>
+<article class="card">
+<p class="card-label">发展中的研究方向</p>
+<h3>听觉电生理</h3>
+<p>利用听觉脑干反应和频率跟随反应，研究语音及复杂声音的神经编码。</p>
+<p><strong>代表性研究主题：</strong>语音内容、频谱调制和时间调制对 cABR/FFR 的影响，以及具有临床应用潜力的电生理测量方法。</p>
 </article>
 </div>
 <div class="research-support-block">
@@ -897,6 +962,7 @@
 <div class="section-heading">
 <p class="eyebrow">教学与指导</p>
 <h2>培养未来的听力学专业人才</h2>
+<p class="section-summary">在 CSUN 听力学临床博士（Au.D.）项目中开展核心课程教学、毕业研究指导与临床教育。</p>
 </div>
 <div class="two-column cards-inline">
 <article>
