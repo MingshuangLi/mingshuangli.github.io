@@ -884,7 +884,50 @@ dl dd {
   .compact-section-title { font-size: 1.58rem !important; }
 }
 </style>
-\n<style>\n/* Clearly larger section titles for an obvious standalone visual change. */\n.section-heading h2 {\n  font-size: clamp(2.36rem, 3.52vw, 2.94rem);\n}\n.compact-section-title {\n  font-size: clamp(2.30rem, 3.40vw, 2.86rem) !important;\n}\n@media (max-width: 760px) {\n  .section-heading h2 { font-size: clamp(1.84rem, 7.28vw, 2.16rem); }\n  .compact-section-title { font-size: clamp(1.80rem, 7.02vw, 2.06rem) !important; }\n}\n@media (max-width: 390px) {\n  .section-heading h2 { font-size: 1.78rem; }\n  .compact-section-title { font-size: 1.74rem !important; }\n}\n</style>\n</head>
+
+
+<style>
+/* Definitive responsive shortcut copy: desktop and mobile never render together. */
+.hero-highlights .desktop-button-copy {
+  display: block !important;
+}
+.hero-highlights .mobile-button-copy {
+  display: none !important;
+}
+
+/* Final section-title scale: visibly larger while preserving hierarchy. */
+.section-heading h2 {
+  font-size: clamp(2.54rem, 3.78vw, 3.16rem);
+}
+.compact-section-title {
+  font-size: clamp(2.48rem, 3.66vw, 3.06rem) !important;
+}
+
+@media (max-width: 760px) {
+  .hero-highlights .desktop-button-copy {
+    display: none !important;
+  }
+  .hero-highlights .mobile-button-copy {
+    display: block !important;
+  }
+  .section-heading h2 {
+    font-size: clamp(1.96rem, 7.70vw, 2.28rem);
+  }
+  .compact-section-title {
+    font-size: clamp(1.92rem, 7.42vw, 2.18rem) !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .section-heading h2 {
+    font-size: 1.90rem;
+  }
+  .compact-section-title {
+    font-size: 1.86rem !important;
+  }
+}
+</style>
+</head>
 <body>
 <header class="site-header">
 <a class="brand" href="#top">Mingshuang Li</a>
