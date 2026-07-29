@@ -748,6 +748,19 @@ main li,
 }
 </style>
 
+
+<style>
+/* 最终标题微调：较当前版本略大，同时仍低于早期偏大的字号。 */
+.section-heading h2 {
+  font-size: clamp(1.88rem, 2.82vw, 2.46rem);
+}
+@media (max-width: 760px) {
+  .section-heading h2 { font-size: clamp(1.55rem, 6.25vw, 1.86rem); }
+}
+@media (max-width: 390px) {
+  .section-heading h2 { font-size: 1.49rem; }
+}
+</style>
 </head>
 <body>
 <header class="site-header">

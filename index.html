@@ -812,6 +812,24 @@ dl dd {
   .hero-highlights .mobile-button-copy { display: block !important; }
 }
 </style>
+
+<style>
+/* Final title refinement: one small step larger, still below the earlier oversized treatment. */
+.section-heading h2 {
+  font-size: clamp(1.88rem, 2.82vw, 2.46rem);
+}
+.compact-section-title {
+  font-size: clamp(1.88rem, 2.74vw, 2.42rem) !important;
+}
+@media (max-width: 760px) {
+  .section-heading h2 { font-size: clamp(1.51rem, 6.2vw, 1.82rem); }
+  .compact-section-title { font-size: clamp(1.49rem, 6vw, 1.73rem) !important; }
+}
+@media (max-width: 390px) {
+  .section-heading h2 { font-size: 1.46rem; }
+  .compact-section-title { font-size: 1.44rem !important; }
+}
+</style>
 </head>
 <body>
 <header class="site-header">
