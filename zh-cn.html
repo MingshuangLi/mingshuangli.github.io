@@ -429,6 +429,71 @@
   .clinical-subsection { margin: 1.35rem 0 1.6rem; }
   .clinical-subsection-title { font-size: 1.08rem; }
 }
+
+
+    /* Compact academic background in the hero profile card */
+    .profile-background {
+      display: grid;
+      gap: 12px;
+      margin: 1rem 0 1.25rem;
+    }
+    .profile-background-section {
+      padding: 14px 15px;
+      border: 1px solid rgba(95, 104, 117, 0.18);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.66);
+    }
+    .profile-background-section h2 {
+      margin: 0 0 9px;
+      color: var(--accent, #8c1d40);
+      font-size: 0.82rem;
+      font-weight: 750;
+      letter-spacing: 0.08em;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+    .profile-background-list {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .profile-background-list li {
+      margin: 0;
+      color: var(--text, #1f2937);
+      font-size: 0.88rem;
+      line-height: 1.42;
+    }
+    .profile-background-list strong {
+      display: block;
+      margin-bottom: 1px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+    .profile-background-list span {
+      display: block;
+      color: var(--muted, #5f6875);
+    }
+    .profile-card > h2.profile-focus-title {
+      margin-top: 0;
+    }
+    @media (max-width: 760px) {
+      .profile-background {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin-top: 0.35rem;
+      }
+      .profile-background-section {
+        padding: 13px 14px;
+      }
+    }
+    @media (max-width: 520px) {
+      .profile-background {
+        grid-template-columns: 1fr;
+      }
+    }
+
 </style>
 <link href="https://mingshuangli.github.io/" hreflang="en" rel="alternate"/><link href="https://mingshuangli.github.io/zh-cn.html" hreflang="zh-Hans" rel="alternate"/><link href="https://mingshuangli.github.io/" hreflang="x-default" rel="alternate"/>
 <style>
@@ -932,7 +997,24 @@ footer .office-address {
 </div>
 <aside aria-label="个人概况" class="profile-card">
 <img alt="Portrait of Mingshuang Li" class="headshot" src="assets/mingshuang-li-headshot.jpg"/>
-<h2>当前重点</h2>
+<div class="profile-background">
+<section aria-labelledby="profile-education-zh" class="profile-background-section">
+<h2 id="profile-education-zh">教育背景</h2>
+<ul class="profile-background-list">
+<li><strong>博士</strong><span>德克萨斯大学奥斯汀分校</span></li>
+<li><strong>硕士</strong><span>北京师范大学</span></li>
+<li><strong>本科</strong><span>曲阜师范大学</span></li>
+</ul>
+</section>
+<section aria-labelledby="profile-experience-zh" class="profile-background-section">
+<h2 id="profile-experience-zh">工作经历</h2>
+<ul class="profile-background-list">
+<li><strong>助理教授、执照听力师</strong><span>CSUN · 2021年至今</span></li>
+<li><strong>课程助理教师、助教</strong><span>UT Austin · 2017–2021年</span></li>
+</ul>
+</section>
+</div>
+<h2 class="profile-focus-title">研究重点</h2>
 <ul>
 <li>噪声中的言语增强</li>
 <li>基于共振峰的信号处理</li>
@@ -942,7 +1024,6 @@ footer .office-address {
 <dl>
 <div><dt>实验室</dt><dd>CSUN 听觉科学实验室</dd></div>
 <div><dt>专业资质</dt><dd>ASHA 认证（CCC-A）；加州执照听力师</dd></div>
-<div><dt>教育背景</dt><dd>博士，德克萨斯大学奥斯汀分校</dd></div>
 </dl>
 </aside>
 </section>
