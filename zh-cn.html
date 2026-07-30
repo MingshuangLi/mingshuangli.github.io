@@ -922,7 +922,6 @@ footer .office-address {
   align-items: start;
 }
 </style>
-
 <style>
 /* Final profile polish: slightly larger type and equal-weight credential entries. */
 .profile-summary-streamlined .profile-summary-label {
@@ -948,6 +947,173 @@ footer .office-address {
 }
 .profile-summary-streamlined .credentials-row dd .credential-peer + .credential-peer {
   margin-top: 0.12rem;
+}
+</style>
+<style>
+/* Final flush-width profile layout: labels above, content uses the full card width. */
+.profile-summary-streamlined .profile-facts-streamlined > div {
+  display: block !important;
+  padding: 15px 0 16px;
+}
+.profile-summary-streamlined .profile-facts-streamlined dt {
+  margin: 0 0 0.42rem;
+  font-size: 0.82rem;
+  line-height: 1.25;
+}
+.profile-summary-streamlined .profile-facts-streamlined dd {
+  width: 100%;
+  margin: 0;
+  font-size: 1.01rem;
+  line-height: 1.42;
+  text-align: left;
+}
+.profile-summary-streamlined .credentials-row dd {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.72rem;
+  row-gap: 0.18rem;
+}
+.profile-summary-streamlined .credentials-row dd .credential-peer {
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0;
+  font-size: 1.01rem;
+  line-height: 1.42;
+}
+.profile-summary-streamlined .credentials-row dd .credential-peer + .credential-peer::before {
+  content: "•";
+  display: inline-block;
+  margin-right: 0.72rem;
+  color: var(--accent, #9d174d);
+}
+.profile-summary-streamlined .profile-facts-streamlined > div:not(.credentials-row) dd > span {
+  display: block;
+  margin-top: 0.12rem;
+  font-size: 0.93rem;
+  line-height: 1.4;
+}
+@media (max-width: 760px) {
+  .profile-summary-streamlined .profile-facts-streamlined > div {
+    padding: 14px 0;
+  }
+}
+@media (max-width: 390px) {
+  .profile-summary-streamlined .credentials-row dd {
+    column-gap: 0.55rem;
+  }
+  .profile-summary-streamlined .credentials-row dd .credential-peer + .credential-peer::before {
+    margin-right: 0.55rem;
+  }
+}
+</style>
+<style>
+/* Final mobile hero composition: portrait and core profile facts form one calm visual unit. */
+.mobile-profile-card {
+  display: none;
+}
+@media (max-width: 760px) {
+  .hero-copy > .mobile-headshot {
+    display: none !important;
+  }
+  .hero > aside.profile-summary-streamlined {
+    display: none !important;
+  }
+  .mobile-profile-card {
+    display: block;
+    margin: 1.35rem 0 1.45rem;
+    padding: 1.1rem 1.05rem 0.25rem;
+    border: 1px solid rgba(140, 29, 64, 0.18);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 8px 24px rgba(31, 41, 55, 0.055);
+  }
+  .mobile-profile-card .mobile-profile-photo {
+    display: block;
+    width: min(64vw, 250px);
+    aspect-ratio: 4 / 5;
+    margin: 0 auto 1.05rem;
+    object-fit: cover;
+    object-position: center 18%;
+    border-radius: 14px;
+  }
+  .mobile-profile-card .profile-summary-label {
+    margin: 0 0 0.3rem;
+    color: var(--accent, #9d174d);
+    font-size: 0.78rem;
+    font-weight: 760;
+    letter-spacing: 0.1em;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+  .mobile-profile-card .profile-facts-streamlined {
+    margin: 0;
+  }
+  .mobile-profile-card .profile-facts-streamlined > div {
+    display: block !important;
+    padding: 0.88rem 0 0.92rem;
+    border-top: 1px solid rgba(95, 104, 117, 0.22);
+  }
+  .mobile-profile-card .profile-facts-streamlined dt {
+    margin: 0 0 0.38rem;
+    color: var(--accent, #9d174d);
+    font-size: 0.8rem;
+    font-weight: 760;
+    letter-spacing: 0.05em;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+  .mobile-profile-card .profile-facts-streamlined dd {
+    width: 100%;
+    margin: 0;
+    color: var(--text, #1f2937);
+    font-size: 1rem;
+    font-weight: 540;
+    line-height: 1.42;
+    text-align: left;
+  }
+  .mobile-profile-card .credentials-row dd {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 0.62rem;
+    row-gap: 0.16rem;
+  }
+  .mobile-profile-card .credential-peer {
+    display: inline-block;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    white-space: nowrap;
+  }
+  .mobile-profile-card .credential-peer + .credential-peer::before {
+    content: "•";
+    display: inline-block;
+    margin-right: 0.62rem;
+    color: var(--accent, #9d174d);
+  }
+  .mobile-profile-card .profile-facts-streamlined > div:not(.credentials-row) dd > span {
+    display: block;
+    margin-top: 0.12rem;
+    color: var(--muted, #5f6875);
+    font-size: 0.93rem;
+    font-weight: 430;
+    line-height: 1.4;
+  }
+}
+@media (max-width: 390px) {
+  .mobile-profile-card {
+    padding-inline: 0.9rem;
+  }
+  .mobile-profile-card .mobile-profile-photo {
+    width: min(67vw, 230px);
+  }
+  .mobile-profile-card .credentials-row dd {
+    column-gap: 0.5rem;
+  }
+  .mobile-profile-card .credential-peer + .credential-peer::before {
+    margin-right: 0.5rem;
+  }
 }
 </style>
 </head>
@@ -980,6 +1146,7 @@ footer .office-address {
     mingshuang.li@csun.edu
   </a>
 </p>
+<section aria-label="手机版个人概况" class="mobile-profile-card"><img alt="李明爽照片" class="mobile-profile-photo" src="assets/mingshuang-li-headshot.jpg"/><p class="profile-summary-label">专业概况</p><dl class="profile-facts-streamlined"><div class="credentials-row"><dt>专业资质</dt><dd><span class="credential-peer">Ph.D., CCC-A</span><span class="credential-peer">执业听力师</span></dd></div><div><dt>教育背景</dt><dd>博士<span>德克萨斯大学奥斯汀分校</span></dd></div><div><dt>任职经历</dt><dd>助理教授、执业听力师<span>加州州立大学北岭分校（CSUN）</span></dd></div></dl></section>
 <p class="lead">李明爽博士毕业于德克萨斯大学奥斯汀分校，现任加州州立大学北岭分校（CSUN）沟通障碍与科学系助理教授、ASHA 认证及加州执照听力师，并负责 CSUN 听力科学实验室。他的研究聚焦于不利聆听条件下的言语感知与言语增强，综合运用心理声学、信号处理和听觉电生理方法，并结合临床实践与督导经验开展研究。他同时担任多部学术期刊专题编辑、客座编辑和同行评审专家。</p>
 <p class="lead-secondary">他负责 CSUN 听觉科学实验室的研究与学生培养，承担听力学临床博士项目的核心课程教学，指导博士毕业研究，并在听力诊断、听觉电生理和前庭平衡觉领域开展临床督导。他曾任 CSUN 听力学临床博士项目代理主任，并持续支持学生的学术与专业发展。</p>
 <div class="work-achievements-heading"><h2>工作与成绩</h2><p class="work-achievements-hint">选择一个领域查看详情</p></div>
