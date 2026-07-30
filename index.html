@@ -429,71 +429,6 @@
   .clinical-subsection { margin: 1.35rem 0 1.6rem; }
   .clinical-subsection-title { font-size: 1.08rem; }
 }
-
-
-    /* Compact academic background in the hero profile card */
-    .profile-background {
-      display: grid;
-      gap: 12px;
-      margin: 1rem 0 1.25rem;
-    }
-    .profile-background-section {
-      padding: 14px 15px;
-      border: 1px solid rgba(95, 104, 117, 0.18);
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.66);
-    }
-    .profile-background-section h2 {
-      margin: 0 0 9px;
-      color: var(--accent, #8c1d40);
-      font-size: 0.82rem;
-      font-weight: 750;
-      letter-spacing: 0.08em;
-      line-height: 1.2;
-      text-transform: uppercase;
-    }
-    .profile-background-list {
-      display: grid;
-      gap: 8px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    .profile-background-list li {
-      margin: 0;
-      color: var(--text, #1f2937);
-      font-size: 0.88rem;
-      line-height: 1.42;
-    }
-    .profile-background-list strong {
-      display: block;
-      margin-bottom: 1px;
-      font-size: 0.9rem;
-      font-weight: 700;
-    }
-    .profile-background-list span {
-      display: block;
-      color: var(--muted, #5f6875);
-    }
-    .profile-card > h2.profile-focus-title {
-      margin-top: 0;
-    }
-    @media (max-width: 760px) {
-      .profile-background {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
-        margin-top: 0.35rem;
-      }
-      .profile-background-section {
-        padding: 13px 14px;
-      }
-    }
-    @media (max-width: 520px) {
-      .profile-background {
-        grid-template-columns: 1fr;
-      }
-    }
-
 </style>
 <link href="https://mingshuangli.github.io/" hreflang="en" rel="alternate"/><link href="https://mingshuangli.github.io/zh-cn.html" hreflang="zh-Hans" rel="alternate"/><link href="https://mingshuangli.github.io/" hreflang="x-default" rel="alternate"/>
 <style>
@@ -942,7 +877,74 @@ footer .office-address {
   line-height: 1.5;
 }
 </style>
-</head>
+<style>
+/* Streamlined professional profile: credentials, education, and experience only. */
+.profile-card.profile-summary-streamlined {
+  overflow: hidden;
+}
+.profile-summary-streamlined .profile-summary-label {
+  margin: 1.1rem 0 0.2rem;
+  color: var(--accent, #9d174d);
+  font-size: 0.74rem;
+  font-weight: 750;
+  letter-spacing: 0.11em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.profile-summary-streamlined .profile-facts-streamlined {
+  margin: 0.45rem 0 0;
+}
+.profile-summary-streamlined .profile-facts-streamlined > div {
+  display: grid;
+  grid-template-columns: minmax(92px, 0.36fr) minmax(0, 0.64fr);
+  gap: 14px;
+  align-items: start;
+  padding: 16px 0;
+  border-top: 1px solid rgba(95, 104, 117, 0.24);
+}
+.profile-summary-streamlined .profile-facts-streamlined > div:last-child {
+  padding-bottom: 4px;
+}
+.profile-summary-streamlined .profile-facts-streamlined dt {
+  margin: 0;
+  color: var(--accent, #9d174d);
+  font-size: 0.76rem;
+  font-weight: 760;
+  letter-spacing: 0.055em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+.profile-summary-streamlined .profile-facts-streamlined dd {
+  margin: 0;
+  color: var(--text, #1f2937);
+  font-size: 0.94rem;
+  font-weight: 540;
+  line-height: 1.48;
+}
+.profile-summary-streamlined .profile-facts-streamlined dd span {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted, #5f6875);
+  font-size: 0.84rem;
+  font-weight: 430;
+}
+@media (max-width: 760px) {
+  .profile-summary-streamlined .profile-summary-label {
+    margin-top: 0.85rem;
+  }
+  .profile-summary-streamlined .profile-facts-streamlined > div {
+    grid-template-columns: minmax(104px, 0.34fr) minmax(0, 0.66fr);
+    gap: 12px;
+    padding: 14px 0;
+  }
+}
+@media (max-width: 390px) {
+  .profile-summary-streamlined .profile-facts-streamlined > div {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+</style></head>
 <body>
 <header class="site-header">
 <a class="brand" href="#top">Mingshuang Li</a>
@@ -1035,37 +1037,7 @@ footer .office-address {
 </a>
 </div>
 </div>
-<aside aria-label="Profile summary" class="profile-card">
-<img alt="Portrait of Mingshuang Li" class="headshot" src="assets/mingshuang-li-headshot.jpg"/>
-<div class="profile-background">
-<section aria-labelledby="profile-education" class="profile-background-section">
-<h2 id="profile-education">Education</h2>
-<ul class="profile-background-list">
-<li><strong>Ph.D.</strong><span>The University of Texas at Austin</span></li>
-<li><strong>M.Ed.</strong><span>Beijing Normal University</span></li>
-<li><strong>B.S.</strong><span>Qufu Normal University</span></li>
-</ul>
-</section>
-<section aria-labelledby="profile-experience" class="profile-background-section">
-<h2 id="profile-experience">Experience</h2>
-<ul class="profile-background-list">
-<li><strong>Assistant Professor &amp; Dispensing Audiologist</strong><span>CSUN · 2021–Present</span></li>
-<li><strong>Assistant Instructor / Teaching Assistant</strong><span>UT Austin · 2017–2021</span></li>
-</ul>
-</section>
-</div>
-<h2 class="profile-focus-title">Research Focus</h2>
-<ul>
-<li>Speech enhancement in noise</li>
-<li>Formant-based processing</li>
-<li>FFR and cABR</li>
-<li>Clinical auditory science</li>
-</ul>
-<dl>
-<div><dt>Laboratory</dt><dd>CSUN Hearing Science Laboratory</dd></div>
-<div><dt>Credentials</dt><dd>CCC-A; California Dispensing Audiologist</dd></div>
-</dl>
-</aside>
+<aside aria-label="Profile summary" class="profile-card profile-summary-streamlined"><img alt="Portrait of Mingshuang Li" class="headshot" src="assets/mingshuang-li-headshot.jpg"/><p class="profile-summary-label">Professional Profile</p><dl class="profile-facts-streamlined"><div><dt>Credentials</dt><dd>Ph.D., CCC-A<span>California Dispensing Audiologist</span></dd></div><div><dt>Education</dt><dd>Ph.D.<span>The University of Texas at Austin</span></dd></div><div><dt>Experience</dt><dd>Assistant Professor &amp; Dispensing Audiologist<span>California State University, Northridge</span></dd></div></dl></aside>
 </section>
 <section class="section muted" id="research">
 <div class="section-heading">
@@ -1073,7 +1045,7 @@ footer .office-address {
 <h2 class="compact-section-title">Behavioral, neural, and translational approaches</h2>
 </div>
 <div class="research-question">
-<p class="eyebrow">Research Vision</p>
+<p class="eyebrow">Program vision</p>
 <blockquote>How can behavioral, neural, and signal-processing approaches improve speech perception under degraded listening conditions?</blockquote>
 </div>
 <div class="card-grid three">
