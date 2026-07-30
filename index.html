@@ -944,7 +944,53 @@ footer .office-address {
     gap: 5px;
   }
 }
-</style></head>
+</style>
+<style>
+/* Keep the profile panel and its contents aligned to the top of the hero area. */
+.hero.section {
+  align-items: start;
+}
+.profile-card.profile-summary-streamlined {
+  align-self: start;
+  height: auto;
+  min-height: 0;
+}
+.profile-summary-streamlined .profile-summary-label {
+  margin-top: 0.9rem;
+}
+.profile-summary-streamlined .profile-facts-streamlined > div {
+  align-items: start;
+}
+</style>
+
+<style>
+/* Final profile polish: slightly larger type and equal-weight credential entries. */
+.profile-summary-streamlined .profile-summary-label {
+  font-size: 0.79rem;
+}
+.profile-summary-streamlined .profile-facts-streamlined dt {
+  font-size: 0.81rem;
+}
+.profile-summary-streamlined .profile-facts-streamlined dd {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.profile-summary-streamlined .profile-facts-streamlined dd span {
+  font-size: 0.9rem;
+}
+.profile-summary-streamlined .credentials-row dd .credential-peer {
+  display: block;
+  margin: 0;
+  color: var(--text, #1f2937);
+  font-size: 1rem;
+  font-weight: 540;
+  line-height: 1.5;
+}
+.profile-summary-streamlined .credentials-row dd .credential-peer + .credential-peer {
+  margin-top: 0.12rem;
+}
+</style>
+</head>
 <body>
 <header class="site-header">
 <a class="brand" href="#top">Mingshuang Li</a>
@@ -1037,7 +1083,7 @@ footer .office-address {
 </a>
 </div>
 </div>
-<aside aria-label="Profile summary" class="profile-card profile-summary-streamlined"><img alt="Portrait of Mingshuang Li" class="headshot" src="assets/mingshuang-li-headshot.jpg"/><p class="profile-summary-label">Professional Profile</p><dl class="profile-facts-streamlined"><div><dt>Credentials</dt><dd>Ph.D., CCC-A<span>California Dispensing Audiologist</span></dd></div><div><dt>Education</dt><dd>Ph.D.<span>The University of Texas at Austin</span></dd></div><div><dt>Experience</dt><dd>Assistant Professor &amp; Dispensing Audiologist<span>California State University, Northridge</span></dd></div></dl></aside>
+<aside aria-label="Profile summary" class="profile-card profile-summary-streamlined"><img alt="Portrait of Mingshuang Li" class="headshot" src="assets/mingshuang-li-headshot.jpg"/><p class="profile-summary-label">Professional Profile</p><dl class="profile-facts-streamlined"><div class="credentials-row"><dt>Credentials</dt><dd><span class="credential-peer">Ph.D., CCC-A</span><span class="credential-peer">Dispensing Audiologist</span></dd></div><div><dt>Education</dt><dd>Ph.D.<span>The University of Texas at Austin</span></dd></div><div><dt>Experience</dt><dd>Assistant Professor &amp; Dispensing Audiologist<span>California State University, Northridge</span></dd></div></dl></aside>
 </section>
 <section class="section muted" id="research">
 <div class="section-heading">

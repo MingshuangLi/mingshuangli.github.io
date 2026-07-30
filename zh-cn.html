@@ -904,7 +904,53 @@ footer .office-address {
     gap: 5px;
   }
 }
-</style></head>
+</style>
+<style>
+/* Keep the profile panel and its contents aligned to the top of the hero area. */
+.hero.section {
+  align-items: start;
+}
+.profile-card.profile-summary-streamlined {
+  align-self: start;
+  height: auto;
+  min-height: 0;
+}
+.profile-summary-streamlined .profile-summary-label {
+  margin-top: 0.9rem;
+}
+.profile-summary-streamlined .profile-facts-streamlined > div {
+  align-items: start;
+}
+</style>
+
+<style>
+/* Final profile polish: slightly larger type and equal-weight credential entries. */
+.profile-summary-streamlined .profile-summary-label {
+  font-size: 0.79rem;
+}
+.profile-summary-streamlined .profile-facts-streamlined dt {
+  font-size: 0.81rem;
+}
+.profile-summary-streamlined .profile-facts-streamlined dd {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.profile-summary-streamlined .profile-facts-streamlined dd span {
+  font-size: 0.9rem;
+}
+.profile-summary-streamlined .credentials-row dd .credential-peer {
+  display: block;
+  margin: 0;
+  color: var(--text, #1f2937);
+  font-size: 1rem;
+  font-weight: 540;
+  line-height: 1.5;
+}
+.profile-summary-streamlined .credentials-row dd .credential-peer + .credential-peer {
+  margin-top: 0.12rem;
+}
+</style>
+</head>
 <body>
 <header class="site-header">
 <a class="brand" href="#top">李明爽</a>
@@ -997,7 +1043,7 @@ footer .office-address {
 </a>
 </div>
 </div>
-<aside aria-label="个人概况" class="profile-card profile-summary-streamlined"><img alt="Portrait of Mingshuang Li" class="headshot" src="assets/mingshuang-li-headshot.jpg"/><p class="profile-summary-label">专业概况</p><dl class="profile-facts-streamlined"><div><dt>专业资质</dt><dd>Ph.D., CCC-A<span>加州执照听力师</span></dd></div><div><dt>教育背景</dt><dd>博士<span>德克萨斯大学奥斯汀分校</span></dd></div><div><dt>任职经历</dt><dd>助理教授、执业听力师<span>加州州立大学北岭分校（CSUN）</span></dd></div></dl></aside>
+<aside aria-label="个人概况" class="profile-card profile-summary-streamlined"><img alt="Portrait of Mingshuang Li" class="headshot" src="assets/mingshuang-li-headshot.jpg"/><p class="profile-summary-label">专业概况</p><dl class="profile-facts-streamlined"><div class="credentials-row"><dt>专业资质</dt><dd><span class="credential-peer">Ph.D., CCC-A</span><span class="credential-peer">执业听力师</span></dd></div><div><dt>教育背景</dt><dd>博士<span>德克萨斯大学奥斯汀分校</span></dd></div><div><dt>任职经历</dt><dd>助理教授、执业听力师<span>加州州立大学北岭分校（CSUN）</span></dd></div></dl></aside>
 </section>
 <section class="section muted" id="research">
 <div class="section-heading">
