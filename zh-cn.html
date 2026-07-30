@@ -1116,6 +1116,51 @@ footer .office-address {
   }
 }
 </style>
+<style>
+/* Final credential alignment: two equal, unbulleted lines. */
+.profile-summary-streamlined .credentials-row dd,
+.mobile-profile-card .credentials-row dd {
+  display: block !important;
+}
+.profile-summary-streamlined .credentials-row dd .credential-peer,
+.mobile-profile-card .credentials-row dd .credential-peer {
+  display: block !important;
+  margin: 0 !important;
+  color: var(--text, #1f2937) !important;
+  font-size: 1.01rem !important;
+  font-weight: 540 !important;
+  line-height: 1.48 !important;
+  white-space: normal !important;
+}
+.profile-summary-streamlined .credentials-row dd .credential-peer + .credential-peer,
+.mobile-profile-card .credentials-row dd .credential-peer + .credential-peer {
+  margin-top: 0.08rem !important;
+}
+.profile-summary-streamlined .credentials-row dd .credential-peer + .credential-peer::before,
+.mobile-profile-card .credentials-row dd .credential-peer + .credential-peer::before {
+  content: none !important;
+  display: none !important;
+  margin: 0 !important;
+}
+</style>
+
+<style>
+/* Final hierarchy adjustment: make the profile heading a clear section title. */
+.profile-summary-streamlined .profile-summary-label,
+.mobile-profile-card .profile-summary-label {
+  font-size: 1.08rem !important;
+  font-weight: 780 !important;
+  letter-spacing: 0.035em !important;
+  line-height: 1.3 !important;
+  margin-bottom: 0.42rem !important;
+}
+@media (max-width: 760px) {
+  .mobile-profile-card .profile-summary-label {
+    font-size: 1.12rem !important;
+    margin-bottom: 0.42rem !important;
+  }
+}
+</style>
 </head>
 <body>
 <header class="site-header">
