@@ -330,19 +330,10 @@
       .profile-link-text span {
         display: none;
       }
-      .profile-link:last-child {
-        grid-column: 1 / -1;
-        width: calc(50% - 5px);
-        justify-self: center;
-      }
     }
     @media (max-width: 350px) {
       .profile-links {
         grid-template-columns: 1fr;
-      }
-      .profile-link:last-child {
-        grid-column: auto;
-        width: 100%;
       }
       .profile-link-text span {
         display: block;
@@ -879,7 +870,14 @@ dl dd {
   color: #8c1d40;
   text-decoration-color: #8c1d40;
 }
-</style></head>
+</style>
+<style>
+footer .office-address {
+  margin-top: 0.65rem;
+  line-height: 1.5;
+}
+</style>
+</head>
 <body>
 <header class="site-header">
 <a class="brand" href="#top">Mingshuang Li</a>
@@ -970,21 +968,6 @@ dl dd {
 </span>
 <span class="profile-link-text"><strong>LinkedIn</strong><span>Professional network</span></span>
 </a>
-<a class="profile-link researchgate-link" href="https://www.researchgate.net/profile/Mingshuang-Li-3" rel="noopener" target="_blank">
-<span aria-hidden="true" class="profile-link-mark">
-<svg role="img" viewbox="0 0 40 40">
-<rect fill="#00CCBB" height="40" rx="10" width="40"></rect>
-<text fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" x="7.2" y="27">R</text>
-<text fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" x="20" y="25.8">G</text>
-<circle cx="31.2" cy="10" fill="#fff" r="2.2"></circle>
-</svg>
-</span>
-<span class="profile-link-text"><strong>Research<wbr/>Gate</strong><span>Research profile</span></span>
-</a>
-</div>
-<div aria-label="Additional links" class="quick-links">
-<a href="#publications">Publications</a>
-<a href="#collaborate">Collaborate</a>
 </div>
 </div>
 <aside aria-label="Profile summary" class="profile-card">
@@ -1234,6 +1217,7 @@ dl dd {
 <div>
 <strong>Mingshuang Li, Ph.D., CCC-A</strong>
 <p>Department of Communication Disorders and Sciences<br/>California State University, Northridge</p>
+<p class="office-address"><strong>Office:</strong><br/>Monterey Hall 317<br/>18111 Nordhoff Street<br/>Northridge, CA 91330-8279</p>
 </div>
 <div class="footer-contact">
 <a href="mailto:mingshuang.li@csun.edu">mingshuang.li@csun.edu</a>
@@ -1243,7 +1227,6 @@ dl dd {
 <a href="https://scholar.google.com/citations?user=U3a9masAAAAJ&amp;hl=en" rel="noopener" target="_blank">Google Scholar</a>
 <a href="https://orcid.org/0000-0001-6095-1228" rel="noopener" target="_blank">ORCID</a>
 <a href="https://www.linkedin.com/in/limingshuang" rel="noopener" target="_blank">LinkedIn</a>
-<a href="https://www.researchgate.net/profile/Mingshuang-Li-3" rel="noopener" target="_blank">ResearchGate</a>
 </div>
 </div>
 <p class="copyright">© <span id="year"></span> Mingshuang Li</p>
