@@ -1177,6 +1177,27 @@ footer .office-address {
   }
 }
 </style>
+
+<style>
+/* 最终一致性修正：放大嵌套分区标题与合作交流标题。 */
+#publications .section-heading .eyebrow,
+#presentations .section-heading .eyebrow,
+#collaborate > div > .eyebrow {
+  font-size: 1.32rem !important;
+  line-height: 1.28 !important;
+  letter-spacing: 0.025em !important;
+  margin-bottom: 0.62rem !important;
+}
+@media (max-width: 700px) {
+  #publications .section-heading .eyebrow,
+  #presentations .section-heading .eyebrow,
+  #collaborate > div > .eyebrow {
+    font-size: 1.24rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 0.55rem !important;
+  }
+}
+</style>
 </head>
 <body>
 <header class="site-header">
