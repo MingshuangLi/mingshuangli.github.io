@@ -21,7 +21,7 @@ a { color: inherit; }
 .nav-toggle { display: none; border: 1px solid var(--line); background: white; border-radius: 10px; padding: 8px 12px; }
 .section { max-width: var(--max); margin: 0 auto; padding: 92px 24px; }
 .muted { max-width: none; padding-left: max(24px, calc((100vw - var(--max))/2)); padding-right: max(24px, calc((100vw - var(--max))/2)); background: var(--soft); }
-.hero { display: grid; grid-template-columns: 1.65fr .8fr; gap: 72px; align-items: center; min-height: calc(100vh - 68px); padding-top: 72px; }
+.hero { display: grid; grid-template-columns: 1.65fr .8fr; gap: 72px; align-items: center; min-height: auto; padding-top: 72px; }
 .eyebrow { margin: 0 0 12px; color: var(--accent); font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; }
 h1 { margin: 0; font-size: clamp(3rem, 7vw, 6.4rem); line-height: .95; letter-spacing: -.065em; }
 h1 span { display: block; margin-top: 18px; font-size: clamp(1.25rem, 2.3vw, 2rem); color: var(--muted); letter-spacing: -.025em; }
