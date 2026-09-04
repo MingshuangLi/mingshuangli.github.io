@@ -98,6 +98,9 @@ dd { margin: 4px 0 0; font-weight: 700; }
 .research-question { margin-top: 48px; padding: 34px 38px; color: white; background: var(--ink); border-radius: var(--radius); }
 .research-question .eyebrow { color: #efb5c5; }
 blockquote { margin: 0; font-size: clamp(1.5rem, 3vw, 2.5rem); line-height: 1.2; letter-spacing: -.03em; }
+.corresponding-author-note { margin: -1.25rem 0 1.1rem; color: var(--muted); font-size: .9rem; }
+.corresponding-author-note sup, .corresponding-author-mark { color: var(--accent); font-weight: 800; }
+.corresponding-author-mark { margin-left: .08em; font-size: .72em; line-height: 0; }
 .publication-list { padding: 0; margin: 0; list-style: none; }
 .publication-list li { display: grid; grid-template-columns: 72px 1fr; gap: 22px; padding: 24px 0; border-top: 1px solid var(--line); }
 .year { color: var(--accent); font-weight: 800; }
