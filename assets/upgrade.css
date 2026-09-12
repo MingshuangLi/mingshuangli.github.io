@@ -361,8 +361,12 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
   font-size: clamp(2rem, 2.75vw, 2.48rem) !important;
 }
 .page-editorial .hero-affiliation {
-  font-size: clamp(1.22rem, 1.65vw, 1.4rem) !important;
-  line-height: 1.48 !important;
+  color: #2f3d55;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.28rem, 1.7vw, 1.48rem) !important;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  line-height: 1.45 !important;
 }
 .page-editorial .hero-intro .lead {
   max-width: 720px !important;
@@ -497,7 +501,7 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
     font-size: clamp(3rem, 5.5vw, 3.8rem) !important;
   }
   .page-editorial .hero-title { font-size: 1.82rem !important; }
-  .page-editorial .hero-affiliation { font-size: 1.16rem !important; }
+  .page-editorial .hero-affiliation { font-size: 1.22rem !important; }
   .page-editorial .hero-portrait-frame { width: 290px; }
   .page-editorial .hero-portrait { max-height: 400px; }
   .page-editorial .profile-ribbon.section {
@@ -539,6 +543,10 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
     filter: brightness(1.04) contrast(0.98) saturate(0.97);
     -webkit-mask-image: none;
     mask-image: none;
+  }
+  .page-editorial .hero-affiliation {
+    margin-top: 0.62rem !important;
+    font-size: 1.2rem !important;
   }
   .page-editorial .profile-ribbon.section {
     padding-top: 1.5rem;
@@ -587,7 +595,7 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
   .page-editorial .hero-upgrade h1 { font-size: 2.85rem !important; }
   .page-en .hero-upgrade h1 { font-size: 2.72rem !important; }
   .page-editorial .hero-title { font-size: 1.38rem !important; }
-  .page-editorial .hero-affiliation { font-size: 1.08rem !important; }
+  .page-editorial .hero-affiliation { font-size: 1.16rem !important; }
   .page-editorial .hero-portrait-frame { width: 235px; }
   .page-editorial .hero-portrait { max-height: 330px; }
 }
