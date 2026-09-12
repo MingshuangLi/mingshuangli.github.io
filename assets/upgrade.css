@@ -577,7 +577,7 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
 }
 @media (max-width: 760px) {
   .page-en .hero-upgrade h1 {
-    font-size: clamp(2.25rem, 10.4vw, 2.85rem) !important;
+    font-size: clamp(2.4rem, 11vw, 2.95rem) !important;
     white-space: nowrap;
   }
   .page-en .hero-credentials {
