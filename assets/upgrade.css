@@ -514,19 +514,39 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
   .page-editorial .hero-upgrade.section {
     grid-template-columns: 1fr !important;
     min-height: auto !important;
-    padding-top: 2.2rem !important;
+    padding: 1.55rem 20px 2.3rem !important;
+    row-gap: 0;
     overflow: visible;
   }
-  .page-editorial .hero-intro { padding: 0; }
+  .page-editorial .hero-intro {
+    display: contents;
+    padding: 0;
+  }
+  .page-editorial .hero-upgrade .eyebrow {
+    order: 1;
+    margin: 0 0 0.65rem !important;
+    font-size: 0.82rem !important;
+    line-height: 1.45;
+  }
   .page-editorial .hero-upgrade h1 {
+    order: 2;
+    margin: 0 !important;
     font-size: clamp(3rem, 13vw, 4.1rem) !important;
+    line-height: 0.98 !important;
     white-space: normal;
   }
+  .page-editorial .hero-title {
+    order: 3;
+    margin: 0.82rem 0 0 !important;
+    font-size: 1.34rem !important;
+    line-height: 1.28 !important;
+  }
   .page-editorial .hero-portrait-frame {
+    order: 5;
     display: block;
     width: min(68vw, 264px);
     min-height: 0;
-    margin: 1.05rem auto 1rem;
+    margin: 1.25rem auto 0.95rem;
     overflow: hidden;
     background: #e9ecee;
     border: 0;
@@ -545,11 +565,20 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
     mask-image: none;
   }
   .page-editorial .hero-affiliation {
-    margin-top: 0.62rem !important;
-    font-size: 1.2rem !important;
+    order: 4;
+    margin: 0.58rem 0 0 !important;
+    font-size: 1.08rem !important;
+    line-height: 1.42 !important;
+  }
+  .page-editorial .hero-intro .lead {
+    order: 6;
+    max-width: 34rem !important;
+    margin: 0.75rem 0 0 !important;
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
   }
   .page-editorial .profile-ribbon.section {
-    padding-top: 1.5rem;
+    padding-top: 1.25rem;
     padding-bottom: 2rem;
   }
   .page-editorial .profile-ribbon .hero-profile-facts {
