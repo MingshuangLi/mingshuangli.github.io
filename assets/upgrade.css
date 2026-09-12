@@ -62,7 +62,7 @@
 
 .hero-upgrade.section {
   display: grid !important;
-  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.82fr) minmax(270px, 0.72fr) !important;
+  grid-template-columns: minmax(0, 1.18fr) minmax(300px, 0.76fr) minmax(285px, 0.72fr) !important;
   gap: 0 !important;
   align-items: stretch !important;
   max-width: var(--max) !important;
@@ -73,7 +73,7 @@
   position: relative;
   z-index: 2;
   align-self: center;
-  padding: 2rem 1.6rem 4rem 0;
+  padding: 2rem 2.75rem 4rem 0;
 }
 .hero-upgrade .eyebrow {
   margin-bottom: 1.2rem !important;
@@ -122,26 +122,27 @@
   z-index: 1;
   display: flex;
   align-items: flex-end;
-  width: calc(100% + 4.5rem);
+  width: 100%;
   min-height: 100%;
-  margin-left: -4.5rem;
+  margin-left: 0;
   overflow: hidden;
-  background: transparent;
+  background: #f7f8f9;
 }
 .hero-portrait {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 57% top;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.22) 8%, #000 27%, #000 100%);
-  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.22) 8%, #000 27%, #000 100%);
+  object-position: center top;
+  filter: brightness(1.08) contrast(0.93) saturate(0.96);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 13%, #000 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 13%, #000 100%);
 }
 .hero-profile-panel {
   position: relative;
   z-index: 2;
   align-self: center;
-  margin-left: 1rem;
+  margin-left: 1.4rem;
   padding: 0.4rem 0 0.4rem 1.7rem;
   border-left: 1px solid rgba(20, 33, 58, 0.14);
 }
@@ -259,8 +260,8 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
     border-left: 0;
   }
   .hero-portrait-frame {
-    width: calc(100% + 2.5rem);
-    margin-left: -2.5rem;
+    width: 100%;
+    margin-left: 0;
   }
   .hero-profile-panel .profile-summary-label { margin: 0; }
   .academic-links { grid-column: 1 / -1; }
@@ -310,6 +311,7 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
     height: auto;
     aspect-ratio: 4 / 5;
     object-position: center top;
+    filter: brightness(1.04) contrast(0.97) saturate(0.98);
     -webkit-mask-image: none;
     mask-image: none;
   }
