@@ -77,9 +77,10 @@
 }
 .hero-upgrade .eyebrow {
   margin-bottom: 1.2rem !important;
-  color: #5d6c86 !important;
-  font-size: 0.76rem !important;
-  letter-spacing: 0.17em !important;
+  color: var(--accent) !important;
+  font-size: 1.12rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
 }
 .hero-upgrade h1 {
   max-width: 760px;
@@ -294,7 +295,7 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
     padding: 2.2rem 20px 2.8rem !important;
   }
   .hero-intro { padding: 0; }
-  .hero-upgrade .eyebrow { font-size: 0.69rem !important; }
+  .hero-upgrade .eyebrow { font-size: 0.94rem !important; }
   .hero-upgrade h1 { font-size: clamp(2.7rem, 13vw, 4rem) !important; }
   .hero-upgrade h1 { white-space: normal; }
   .hero-credentials { display: block; margin-top: 0.35rem; font-size: 0.5em; }
@@ -339,8 +340,8 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
 
 /* Bilingual hero: reference-driven two-column editorial composition. */
 .page-editorial .hero-upgrade.section {
-  grid-template-columns: minmax(0, 1fr) 280px !important;
-  min-height: 410px !important;
+  grid-template-columns: minmax(0, 1fr) 325px !important;
+  min-height: 430px !important;
   padding-top: 32px !important;
   padding-bottom: 0 !important;
   overflow: hidden;
@@ -359,7 +360,10 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
   max-width: 760px;
   font-size: clamp(2rem, 2.75vw, 2.48rem) !important;
 }
-.page-editorial .hero-affiliation { font-size: 1.04rem !important; }
+.page-editorial .hero-affiliation {
+  font-size: clamp(1.22rem, 1.65vw, 1.4rem) !important;
+  line-height: 1.48 !important;
+}
 .page-editorial .hero-intro .lead {
   max-width: 720px !important;
   font-size: clamp(1.18rem, 1.6vw, 1.34rem) !important;
@@ -367,7 +371,7 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
 .page-editorial .hero-portrait-frame {
   align-self: end;
   justify-self: end;
-  width: 255px;
+  width: 300px;
   min-height: 0;
   margin: 0;
   overflow: visible;
@@ -376,7 +380,7 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
 .page-editorial .hero-portrait {
   width: 100%;
   height: auto;
-  max-height: 370px;
+  max-height: 415px;
   object-fit: contain;
   object-position: center bottom;
   filter: none;
@@ -388,23 +392,24 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
   grid-template-columns: 0.42fr 1.58fr;
   gap: 1rem 2.2rem;
   max-width: var(--max);
-  padding-top: 1.4rem;
-  padding-bottom: 1.7rem;
+  padding-top: 1.8rem;
+  padding-bottom: 1.9rem;
   border-top: 1px solid #e0e5ea;
 }
 .page-editorial .profile-ribbon .profile-summary-label {
   margin: 0;
   color: var(--ink) !important;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.25rem !important;
+  font-size: 1.5rem !important;
   font-weight: 700 !important;
   letter-spacing: -0.02em !important;
   text-transform: none !important;
 }
 .page-editorial .profile-ribbon .hero-profile-facts {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: 1fr 1.55fr 0.95fr 0.9fr;
   gap: 0 1.2rem;
+  align-items: start;
 }
 .page-editorial .profile-ribbon .hero-profile-facts > div {
   padding: 0 0 0 1rem;
@@ -413,18 +418,43 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
 }
 .page-editorial .profile-ribbon .academic-links {
   grid-column: 2;
-  padding-top: 0.7rem;
+  padding-top: 0.9rem;
+}
+.page-editorial .profile-ribbon .hero-profile-facts dt {
+  font-size: 0.76rem;
+}
+.page-editorial .profile-ribbon .hero-profile-facts dd {
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+.page-editorial .profile-ribbon .credential-list span {
+  display: block;
+  margin: 0;
+  color: var(--ink);
+  font-weight: 650;
+}
+.page-editorial .profile-ribbon .credential-list span + span {
+  margin-top: 0.52rem;
+}
+.page-editorial .profile-ribbon .academic-links a {
+  font-size: 0.84rem;
+}
+
+@media (min-width: 761px) {
+  .page-en .hero-title { white-space: nowrap; }
 }
 
 @media (max-width: 1050px) {
   .page-editorial .hero-upgrade.section {
-    grid-template-columns: minmax(0, 1fr) 240px !important;
+    grid-template-columns: minmax(0, 1fr) 280px !important;
   }
   .page-editorial .hero-upgrade h1 {
     font-size: clamp(3rem, 5.5vw, 3.8rem) !important;
   }
-  .page-editorial .hero-portrait-frame { width: 220px; }
-  .page-editorial .hero-portrait { max-height: 320px; }
+  .page-editorial .hero-title { font-size: 1.82rem !important; }
+  .page-editorial .hero-affiliation { font-size: 1.16rem !important; }
+  .page-editorial .hero-portrait-frame { width: 255px; }
+  .page-editorial .hero-portrait { max-height: 360px; }
   .page-editorial .profile-ribbon.section {
     grid-template-columns: 1fr;
   }
@@ -444,13 +474,13 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
     white-space: normal;
   }
   .page-editorial .hero-portrait-frame {
-    width: min(54vw, 190px);
+    width: min(60vw, 220px);
     min-height: 0;
     margin: 1.5rem auto 0;
   }
   .page-editorial .hero-portrait {
     height: auto;
-    max-height: 280px;
+    max-height: 315px;
     aspect-ratio: auto;
     object-position: center bottom;
     filter: none;
@@ -470,6 +500,18 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
     border-top: 1px solid #e0e5ea;
     border-left: 0;
   }
+}
+
+@media (min-width: 761px) and (max-width: 950px) {
+  .page-editorial .hero-upgrade.section {
+    grid-template-columns: minmax(0, 1fr) 225px !important;
+  }
+  .page-editorial .hero-intro { padding-right: 2.35rem; }
+  .page-editorial .hero-upgrade h1 { font-size: 2.85rem !important; }
+  .page-editorial .hero-title { font-size: 1.38rem !important; }
+  .page-editorial .hero-affiliation { font-size: 1.08rem !important; }
+  .page-editorial .hero-portrait-frame { width: 210px; }
+  .page-editorial .hero-portrait { max-height: 300px; }
 }
 
 /* Cohesive editorial system across the full bilingual site. */
