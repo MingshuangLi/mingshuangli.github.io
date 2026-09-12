@@ -340,7 +340,7 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
 
 /* Bilingual hero: reference-driven two-column editorial composition. */
 .page-editorial .hero-upgrade.section {
-  grid-template-columns: minmax(0, 1fr) 365px !important;
+  grid-template-columns: minmax(0, 1fr) 375px !important;
   min-height: 455px !important;
   padding-top: 32px !important;
   padding-bottom: 0 !important;
@@ -371,7 +371,7 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
 .page-editorial .hero-portrait-frame {
   align-self: end;
   justify-self: end;
-  width: 340px;
+  width: 350px;
   min-height: 0;
   margin: 0;
   overflow: visible;
@@ -380,7 +380,7 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
 .page-editorial .hero-portrait {
   width: 100%;
   height: auto;
-  max-height: 455px;
+  max-height: 466px;
   object-fit: contain;
   object-position: center bottom;
   filter: contrast(1.04) saturate(0.98) drop-shadow(0 8px 10px rgba(35, 49, 70, 0.2)) drop-shadow(0 0 1px rgba(35, 49, 70, 0.25));
@@ -520,9 +520,9 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
   }
   .page-editorial .hero-portrait-frame {
     display: block;
-    width: min(64vw, 250px);
+    width: min(68vw, 264px);
     min-height: 0;
-    margin: 1.35rem auto 1rem;
+    margin: 1.05rem auto 1rem;
     overflow: hidden;
     background: #e9ecee;
     border: 0;
