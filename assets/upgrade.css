@@ -78,9 +78,9 @@
 .hero-upgrade .eyebrow {
   margin-bottom: 1.2rem !important;
   color: var(--accent) !important;
-  font-size: 1.12rem !important;
+  font-size: 1.28rem !important;
   font-weight: 700 !important;
-  letter-spacing: 0.04em !important;
+  letter-spacing: 0.035em !important;
 }
 .hero-upgrade h1 {
   max-width: 760px;
@@ -524,9 +524,12 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
   }
   .page-editorial .hero-upgrade .eyebrow {
     order: 1;
-    margin: 0 0 0.65rem !important;
-    font-size: 0.82rem !important;
-    line-height: 1.45;
+    max-width: 23rem;
+    margin: 0 0 0.78rem !important;
+    font-size: 1.02rem !important;
+    letter-spacing: 0.025em !important;
+    line-height: 1.48;
+    text-wrap: balance;
   }
   .page-editorial .hero-upgrade h1 {
     order: 2;
