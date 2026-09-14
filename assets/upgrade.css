@@ -424,8 +424,8 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
 }
 .page-editorial .profile-ribbon.section {
   display: grid;
-  grid-template-columns: 0.42fr 1.58fr;
-  gap: 1rem 2.2rem;
+  grid-template-columns: minmax(150px, 0.3fr) 1.7fr;
+  gap: 1rem 1.65rem;
   max-width: var(--max);
   padding-top: 1.8rem;
   padding-bottom: 1.9rem;
@@ -440,9 +440,13 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
   letter-spacing: -0.02em !important;
   text-transform: none !important;
 }
+.page-en .profile-ribbon .profile-summary-label {
+  max-width: 8.5ch;
+  line-height: 1.08;
+}
 .page-editorial .profile-ribbon .hero-profile-facts {
   display: grid;
-  grid-template-columns: 1.22fr 1.5fr 0.92fr 0.86fr;
+  grid-template-columns: 1.12fr 1.72fr 0.9fr 0.76fr;
   gap: 0 1.2rem;
   align-items: start;
 }
@@ -524,7 +528,7 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
 
 @media (min-width: 981px) {
   .page-zh .profile-ribbon .hero-profile-facts {
-    grid-template-columns: 1.15fr 1.45fr 1.18fr 0.72fr;
+    grid-template-columns: 1.08fr 1.62fr 1.18fr 0.62fr;
   }
   .page-zh .profile-ribbon .hero-profile-facts > div:nth-child(3) dd span {
     white-space: nowrap;
