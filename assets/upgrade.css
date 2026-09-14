@@ -327,7 +327,7 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
 @media (max-width: 760px) {
   .page-editorial main section[id]:not(#top),
   .page-editorial footer[id] {
-    scroll-margin-top: 70px;
+    scroll-margin-top: 58px;
   }
   .site-header { padding-inline: 18px; }
   .brand { max-width: 58vw; font-size: 0.9rem; line-height: 1.25; }
