@@ -30,33 +30,42 @@
 }
 
 .site-header {
-  min-height: 64px;
+  min-height: 68px;
   padding-inline: max(28px, calc((100vw - var(--max)) / 2));
 }
-.brand { order: 1; margin-right: auto; color: var(--ink); font-size: 1.08rem; font-weight: 700; }
-.nav { order: 2; gap: 20px; }
-.nav a { font-size: 0.87rem; }
+.brand { order: 1; margin-right: auto; color: var(--ink); font-size: 1.14rem; font-weight: 700; }
+.nav { order: 2; gap: 18px; }
+.nav a { font-size: 1rem; font-weight: 550; }
 .language-switch {
   order: 3;
-  gap: 0.2rem !important;
+  gap: 0.08rem !important;
   margin-left: 1.15rem !important;
   margin-right: 0.7rem !important;
-  padding: 0 !important;
-  border: 0 !important;
-  background: transparent !important;
+  padding: 0.18rem !important;
+  border: 1px solid #d9e0e6 !important;
+  border-radius: 999px !important;
+  background: #f5f7f9 !important;
 }
 .language-switch::before { display: none !important; }
 .language-switch a,
 .language-switch span {
   min-height: auto !important;
-  padding: 0.25rem 0.35rem !important;
-  border-radius: 0 !important;
-  font-size: 0.84rem !important;
+  padding: 0.38rem 0.62rem !important;
+  border-radius: 999px !important;
+  font-size: 0.93rem !important;
   font-weight: 700 !important;
+  line-height: 1 !important;
 }
 .language-switch .active {
+  color: #ffffff !important;
+  background: var(--accent) !important;
+  box-shadow: 0 1px 3px rgba(92, 20, 48, 0.18);
+}
+.language-switch a:not(.active) { color: #536078 !important; }
+.language-switch a:not(.active):hover,
+.language-switch a:not(.active):focus-visible {
   color: var(--accent) !important;
-  background: transparent !important;
+  background: #f4e8ed !important;
 }
 .nav-toggle { order: 4; }
 
@@ -289,6 +298,15 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
   .site-header { padding-inline: 18px; }
   .brand { max-width: 58vw; font-size: 0.9rem; line-height: 1.25; }
   .brand-degree { display: none; }
+  .language-switch {
+    margin-left: 0.45rem !important;
+    margin-right: 0.25rem !important;
+  }
+  .language-switch a,
+  .language-switch span {
+    padding: 0.36rem 0.55rem !important;
+    font-size: 0.88rem !important;
+  }
   .hero-upgrade.section {
     grid-template-columns: 1fr !important;
     min-height: auto !important;
