@@ -637,6 +637,11 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
     padding-top: 1.25rem;
     padding-bottom: 2rem;
   }
+  .page-en .profile-ribbon .profile-summary-label {
+    max-width: none;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
   .page-editorial .profile-ribbon .hero-profile-facts {
     grid-template-columns: 1fr;
     gap: 0;
