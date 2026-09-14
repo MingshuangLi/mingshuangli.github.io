@@ -278,11 +278,41 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
 }
 
 @media (max-width: 980px) {
-  .nav-toggle { display: block; }
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.38rem;
+    min-height: 40px;
+    padding: 0.52rem 0.72rem;
+    color: var(--accent);
+    background: #ffffff;
+    border: 1.5px solid rgba(139, 30, 63, 0.62);
+    border-radius: 8px;
+    box-shadow: 0 2px 7px rgba(92, 20, 48, 0.1);
+    font-size: 0.92rem;
+    font-weight: 750;
+    line-height: 1;
+  }
+  .nav-toggle::before {
+    content: "☰";
+    font-size: 1.05rem;
+    line-height: 1;
+  }
+  .nav-toggle:hover,
+  .nav-toggle:focus-visible {
+    background: #f9eef2;
+    border-color: var(--accent);
+  }
+  .nav-toggle[aria-expanded="true"] {
+    color: #ffffff;
+    background: var(--accent);
+    border-color: var(--accent);
+  }
   .nav {
     display: none;
     position: absolute;
-    top: 64px;
+    top: 68px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -306,6 +336,11 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
   .language-switch span {
     padding: 0.36rem 0.55rem !important;
     font-size: 0.88rem !important;
+  }
+  .nav-toggle {
+    min-height: 38px;
+    padding: 0.48rem 0.62rem;
+    font-size: 0.88rem;
   }
   .hero-upgrade.section {
     grid-template-columns: 1fr !important;
