@@ -497,7 +497,7 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
 .page-editorial .profile-ribbon .academic-links {
   grid-column: 2;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.65rem;
   padding-top: 0.9rem;
 }
@@ -563,6 +563,28 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
 .page-editorial .profile-ribbon .hero-profile-facts > div:first-child a {
   white-space: nowrap;
   overflow-wrap: normal;
+}
+
+@media (min-width: 1051px) {
+  .page-editorial .profile-ribbon .academic-links {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 0.45rem;
+  }
+  .page-editorial .profile-ribbon .academic-links a {
+    min-height: 44px;
+    gap: 0.42rem;
+    padding: 0.35rem 0.42rem;
+    font-size: 0.78rem;
+  }
+  .page-editorial .profile-ribbon .profile-link-mark,
+  .page-editorial .profile-ribbon .profile-link-mark svg {
+    width: 24px;
+    height: 24px;
+  }
+  .page-editorial .profile-ribbon .profile-link-mark {
+    flex-basis: 24px;
+    border-radius: 5px;
+  }
 }
 
 @media (min-width: 981px) {
