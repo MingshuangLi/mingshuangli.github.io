@@ -574,7 +574,7 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
     min-height: 44px;
     gap: 0.42rem;
     padding: 0.35rem 0.42rem;
-    font-size: 0.78rem;
+    font-size: 0.86rem;
   }
   .page-editorial .profile-ribbon .profile-link-mark,
   .page-editorial .profile-ribbon .profile-link-mark svg {
