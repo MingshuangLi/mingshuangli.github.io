@@ -472,7 +472,7 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
 }
 @media (min-width: 761px) {
   .page-editorial .hero-portrait-frame {
-    transform: translateY(0.25rem);
+    transform: translateY(-2.75rem);
   }
 }
 .page-editorial .profile-ribbon.section {
