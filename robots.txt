@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
+# Keep the transparent desktop cutout out of Google image previews.
+# The opaque original portrait, preferred search photo, and favicons stay public.
+User-agent: Googlebot
+User-agent: Googlebot-Image
+Disallow: /assets/mingshuang-li-cutout.webp
+
 Sitemap: https://mingshuangli.github.io/sitemap.xml
