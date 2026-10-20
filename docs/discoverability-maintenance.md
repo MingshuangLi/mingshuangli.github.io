@@ -59,3 +59,20 @@ to a homepage. Confirm all public full-text links are authorized and accessible.
 
 Validate JSON-LD, sitemap XML, HTTP status codes and exact body/CSS preservation.
 Check desktop and mobile whenever a change touches visual markup or styles.
+
+
+## Academic Perspectives update — 2026-10-20
+
+- Homepages now include ordinary HTML PDF and Abstract links for this paper.
+- Canonical English abstract: /files/Li_2026_Speech_Enhancement_Hearing_Devices.html
+- Canonical Chinese interface: /files/Li_2026_Speech_Enhancement_Hearing_Devices.zh-cn.html
+- Both canonical pages share the original PDF's /files/ directory. PDF bytes and
+  URL are unchanged. No extra PDF copies or modified publication versions exist.
+- Both pages display the full 131-word English abstract extracted verbatim from
+  the published PDF, ahead of the existing summary. The Chinese interface labels
+  the original English abstract explicitly; no translated abstract is invented.
+- Original /publications/ records remain usable, with canonical and hreflang
+  pointing to the /files/ records. The old #article entity ID remains stable.
+- Publication directories, relevant related-paper links, homepage ItemLists and
+  sitemap now refer to canonical records. No CSS, JS or other citations change.
+- These repairs support discovery; they do not guarantee Google Scholar inclusion.
