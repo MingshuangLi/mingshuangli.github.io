@@ -868,3 +868,10 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
     border-radius: 8px;
   }
 }
+
+/* Keep the transparent portrait decorative; the semantic image has an opaque background for search previews. */
+@media (min-width: 761px) {
+  .page-editorial .hero-portrait {
+    content: url("mingshuang-li-cutout.webp");
+  }
+}
