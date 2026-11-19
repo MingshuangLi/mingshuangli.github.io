@@ -869,9 +869,25 @@ button:focus-visible { outline: 3px solid rgba(139, 30, 63, 0.35); outline-offse
   }
 }
 
-/* Keep the transparent portrait decorative; the semantic image has an opaque background for search previews. */
-@media (min-width: 761px) {
-  .page-editorial .hero-portrait {
-    content: url("mingshuang-li-cutout.webp");
-  }
+/* Use the same uncropped square portrait on desktop and mobile. */
+.page-editorial .hero-portrait-frame {
+  overflow: hidden;
+  border-radius: 14px;
+  background: #e9ecee;
+  box-shadow: 0 8px 24px rgba(31, 41, 55, 0.12);
+}
+.page-editorial .hero-portrait-frame::before {
+  display: none;
+}
+.page-editorial .hero-portrait {
+  content: normal;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  object-position: center;
+  filter: none;
+  -webkit-mask-image: none;
+  mask-image: none;
 }
